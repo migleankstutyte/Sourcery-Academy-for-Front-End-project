@@ -1,0 +1,26 @@
+/* background */
+.main-container {
+    height: 2369px;
+}
+
+/* container */
+.container {
+    width: 1180px;
+    margin: auto;  
+}
+
+/* header */
+header {
+    height: 58px;
+}
+
+/* content */
+.content {
+    height: 2210px;
+}
+
+
+
+
+
+
