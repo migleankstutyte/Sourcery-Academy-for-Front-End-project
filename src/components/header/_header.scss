@@ -1,3 +1,19 @@
-.page-header {
+.header-color {
+    height: $header-height;
+    width: $width-100;
+    background-color: $black;
+    position: $position-absolute;
+}
 
+.grid {
+    display: $grid;
+    grid-template-columns: $grid-template-columns;
+    grid-auto-rows: $grid-auto-rows; 
+    max-width: $max-width;
+    margin: $margin-0-auto;
+    position: $position-relative;
+}
+.page-header {
+    display: $grid;
+    opacity: $opacity-1; //It's needed that could be seen through black .header-color
 }

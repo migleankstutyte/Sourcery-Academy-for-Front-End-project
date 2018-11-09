@@ -30,3 +30,14 @@
 
 // Print stylesheet
 @import 'print';
+
+
+//I don't know if it should be dublicated if also this .grid is in header.scss
+.grid {
+    display: $grid;
+    grid-template-columns: $grid-template-columns;
+    grid-auto-rows: $grid-auto-rows; 
+    max-width: $max-width;
+    margin: $margin-0-auto;
+    position: $position-relative;
+}
