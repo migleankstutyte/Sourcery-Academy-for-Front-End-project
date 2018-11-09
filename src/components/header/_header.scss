@@ -1,3 +1,4 @@
+// div purpose to add color for header
 .header-color {
     height: $header-height;
     width: $width-100;
@@ -5,6 +6,7 @@
     position: $position-absolute;
 }
 
+// grid declaration
 .grid {
     display: $grid;
     grid-template-columns: $grid-template-columns;
@@ -13,6 +15,8 @@
     margin: $margin-0-auto;
     position: $position-relative;
 }
+
+// page header container for logo, nav and profile purposes
 .page-header {
     display: $grid;
     opacity: $opacity-1; //It's needed that could be seen through black .header-color
