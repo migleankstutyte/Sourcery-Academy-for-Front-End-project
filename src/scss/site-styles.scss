@@ -34,17 +34,16 @@
 // grid declaration
 .grid {
     display: $grid;
-    grid-column: $grid-column;
     grid-template-columns: $grid-template-columns;
-    grid-auto-rows: $grid-auto-rows; 
-    max-width: $max-width;
-    margin: $margin-0-auto;
-    position: $position-relative;
+    width: $max-width;
+    column-gap: $grid-column-gap;
+    
+    //margin: $margin-0-auto;
+    //position: $position-relative;
 }
 
 .side-bar {
-    grid-column: 1/4; // dont' understand why $grid-side from variables.scss doesn't work
-    
+    grid-column: 1/4; // dont' understand why $grid-side from variables.scss doesn't work   
 }
 
 .side-bar-content {
