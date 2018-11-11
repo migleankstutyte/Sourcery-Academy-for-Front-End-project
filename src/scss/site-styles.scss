@@ -36,14 +36,19 @@ $mainBackgroundLightGrey: #f3f4f5;
 $mainTextBalck: #13191b;
 $linkBlue: #30aed6;
 $mainBlue: #30a1d6;
+$mainFont: 'Proxima Nova',
+sans-serif;
+$secondFont: 'Proxima Nova - Semibold',
+sans-serif;
 
 body {
     margin: 0;
     padding: 0;
     background-color: $mainBackgroundLightGrey;
-    font-family: 'Montserrat', sans-serif !important;
-    // font-family: "Proxima Nova";
+    font-family: $mainFont;
 }
+
+//Blog Post style
 
 .post-wrapper {
     background-color: #ffffff;
@@ -68,20 +73,27 @@ body {
 
             .post-person-name {
                 display: inline-block;
+                position: relative;
+                top: -8px;
 
                 h1 {
-                    color: $mainTextBalck;
-                    font-size: 14px;
-                    font-weight: 800;
+                    color: #13191b;
+                    font-size: 16px;
+                    font-family: $secondFont;
+                    font-weight: 400;
                     line-height: 20.7px;
+                    margin: 0;
                 }
 
                 p {
                     color: #a9aeb0;
-                    font-size: 10px;
-                    font-weight: 600;
+                    font-size: 12px;
+                    font-weight: 400;
                     line-height: 20.7px;
                     text-transform: uppercase;
+                    font-family: $secondFont;
+                    margin: 0;
+
                 }
             }
 
@@ -106,12 +118,14 @@ body {
             font-weight: 400;
             line-height: 16.1px;
             text-transform: uppercase;
+            font-family: $secondFont;
+
         }
     }
 
     .post-content {
         display: block;
-        height: 340px;
+        height: 344px;
         width: 100%;
 
         .post-article {
@@ -119,15 +133,17 @@ body {
 
             h1 {
                 color: $mainTextBalck;
-                font-size: 15px;
-                font-weight: 600;
+                font-size: 17px;
+                font-weight: 400;
                 line-height: 22px;
                 margin-top: 0;
+                font-family: $secondFont;
+
             }
 
             p {
                 color: #7b8487;
-                font-size: 13px;
+                font-size: 15px;
                 font-weight: 400;
                 line-height: 20px;
             }
@@ -159,13 +175,16 @@ body {
                 span {
                     color: $linkBlue;
                     margin: 0 3px 0 8px;
-                    font-weight: 600;
+                    font-size: 13px;
+                    font-family: $secondFont;
+                    font-weight: 700;
+
                 }
 
                 p {
                     display: inline-block;
                     color: #7b8487;
-                    font-size: 12px;
+                    font-size: 13px;
                     text-transform: uppercase;
                     font-weight: 400;
                 }
@@ -195,6 +214,7 @@ body {
                 background-color: #ffffff;
                 margin: auto;
                 padding-left: 10px;
+                font-size: 14px;
             }
         }
 
@@ -208,60 +228,83 @@ body {
 
             img {
                 padding: 16px;
+                max-width: none;
             }
 
             .comment-article {
                 padding-top: 5px;
                 padding-right: 16px;
+
                 h2 {
-                    color: $mainTextBalck;
+                    color: #13191b;
                     font-size: 12px;
                     font-weight: 600;
                     line-height: 20.7px;
                     margin-bottom: 0;
+                    font-family: $secondFont;
                 }
 
                 p {
                     color: #7b8487;
-                    font-size: 11px;
-                    font-weight: 400;
+                    font-size: 13px;
                     line-height: 18px;
                     margin-top: 0;
                     border-bottom: 1px solid #e6e7e8;
                     padding-bottom: 12px;
                     padding-right: 20px;
+                    margin-bottom: 10px;
                 }
-                .post-comments-likes{
+
+                .post-comments-likes {
                     display: inline-block;
                     width: 100%;
-                    i{
-                        color: $mainBlue;
+                    .likes-button{
+                        border: none;
+                        background-color: transparent;
+                        i {
+                            color: $mainBlue;
+                        }
+
+                        span {
+                            color: $mainTextBalck;
+                            margin: 0 3px 0 8px;
+                            font-weight: 600;
+                            font-size: 13px;
+                        }
+
+                        p {
+                            display: inline-block;
+                            color: #7b8487;
+                            font-size: 13px;
+                            text-transform: uppercase;
+                            line-height: 22px;
+                            padding: 0;
+                            margin: 0;
+                            border: none;
+
+                        }
                     }
-                    span{
-                        color: $mainTextBalck;
-                        margin: 0 3px 0 8px;
-                        font-weight: 600;
-                        font-size: 13px;
-                    }
-                    p{
-                        display: inline-block;
+                    .delete-button{
+                        border: none;
+                        background-color: transparent;
                         color: #7b8487;
-                        font-size: 12px;
+                        font-size: 13px;
                         text-transform: uppercase;
-                        font-weight: 400;
-                        
+                        line-height: 22px;
+                        border-left: 1px solid #e6e7e8;
                     }
-                    .comments-time{
+
+                    .comments-time {
                         display: block;
                         float: right;
                         color: #a9aeb0;
-                        font-size: 10px;
+                        font-size: 12px;
                         text-transform: uppercase;
-                        font-weight: 400;
                         line-height: 20.7px;
+                        font-family: $secondFont;
                     }
                 }
-                
+
             }
 
         }
