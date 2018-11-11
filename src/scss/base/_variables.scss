@@ -3,3 +3,29 @@ $base-line-height: 1.5;
 $base-font-size: 16px;
 
 //widths, heights, sizes, timings, settings
+
+// height
+$header-height: 58px;
+
+// width
+$width-100: 100%;
+$max-width: 1180px;
+
+// margin
+$margin-0-auto: 0 auto;
+
+// position
+$position-absolute: absolute;
+$position-relative: relative;
+
+// grid
+$grid: grid;
+$grid-template-columns: repeat(15, 1fr);
+$grid-auto-rows: minmax(58px, auto);
+$grid-column: 1/16;
+$grid-side: 1/4;
+$grid-side-content: 4/16;
+
+
+// opacity
+$opacity-1: 1;
