@@ -21,11 +21,11 @@ $position-relative: relative;
 // grid
 $grid: grid;
 $grid-template-columns: repeat(15, 1fr);
-$grid-auto-rows: minmax(58px, auto);
+$grid-auto-rows: minmax(56px, auto);
 $grid-column: 1/16;
 $grid-side: 1/4;
 $grid-side-content: 4/16;
-
+$grid-column-gap: 20px;
 
 // opacity
 $opacity-1: 1;
