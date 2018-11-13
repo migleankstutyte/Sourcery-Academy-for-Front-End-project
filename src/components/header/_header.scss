@@ -1,80 +1,66 @@
 // div purpose to add color for header
 .header-color-wrapper {
     height: $header-height;
-    width: $width-100;
+    width: 100%;
     background-color: $black;
-    position: $position-absolute;
     display: flex;
     justify-content: center;
+    position: fixed;
+    top: 0;
 }
-
 // page header container for logo, nav and profile purposes
 .page-header {
     display: $grid;
-    opacity: $opacity-1; //It's needed that could be seen through black .header-color
 }
-
 //HEADER LOGO CLASSES
-
 .logo {
     grid-column: 1/3;
     display: flex;
-    align-self: center;  
+    align-self: center;
 }
-
 //HEADER NAVIGATION CLASSES
-
 .navigation-wrapper {
     grid-column: 6 / 11;
 }
-
 .navigation-list {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
     padding: 0;
 }
-
 .navigation-list-item {
     text-align: center;
     text-decoration: none;
 }
-
 .header-navigation-text {
     color: #7b8487;
     text-decoration: none;
     font-family: proxima-nova, sans-serif;
     font-weight: 400;
     text-transform: uppercase;
-    font-size: 0.8em;    
+    font-size: 0.8em;
 }
-
 //HEADER ACTIONS CLASSES
-
 .header-actions-wrapper {
     grid-column: 12 / 16;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
-
 .header-actions-item {
     background-color: $black;
     border: none;
     padding: 0 15px;
-    cursor: pointer;     
+    cursor: pointer;
     height: 100%;
 }
-
 .profile-dropdown {
     position: absolute;
     display: none;
     list-style-type: none;
     right: 0;
     margin-top: 9px;
-    //margin: 0;
 }
-
 .profile-dropdown-item {
     display: flex;
     flex-direction: row;
@@ -85,31 +71,22 @@
     height: 45px;
     text-decoration: none;
 }
-
 .profile-dropdown-item-text {
     color: $white;
 }
 .profile-dropdown-item-icon {
     padding: 0 15px;
 }
-
 .profile-dropdown-separator {
     border-bottom: solid 1px $header-separator;
 }
-
 //SHOW DROP DOWN
-
 .profile-dropdown-icon {
     position: relative;
 }
-
-.profile-dropdown-icon:hover ul{
+.profile-dropdown-icon:hover ul {
     display: block;
 }
-
 .profile-dropdown-icon:hover {
     background-color: $navy;
 }
-
-
-
