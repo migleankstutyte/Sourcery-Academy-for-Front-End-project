@@ -39,15 +39,12 @@
     column-gap: $grid-column-gap;
     margin: auto;
 }
-
 .side-bar {
     grid-column: 1/4; 
 }
-
 .side-bar-content {
     grid-column: 4/16; 
 }
-
 main {
     margin-top: 56px; // that content would be seen below header, not on it
 }
