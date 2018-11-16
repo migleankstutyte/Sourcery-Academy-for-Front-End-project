@@ -1,0 +1,31 @@
+.post-content {
+    &__article {
+        padding: 0 55px 0 20px;
+    }
+
+    &__heading {
+        color: $mainTextBlack;
+        font-size: 1.063rem;
+        line-height: 1.2;
+        margin-top: 0;
+        font-family: $mainFont;
+        font-weight: 700;
+    }
+
+    &__text {
+        color: $RollingStone;
+        font-size: 0.9375rem;
+        line-height: 1.2
+    }
+
+    &__img {
+        height: 180px;
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: $MoreWhite;
+    }
+}
