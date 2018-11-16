@@ -2,7 +2,7 @@
     &__input {
         height: 68px;
         box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.05);
-        border: 1px solid #e6e7e8;
+        border: 1px solid $iron;
         background-color: $MoreWhite;
         display: flex;
     }
@@ -14,8 +14,8 @@
     &__items {
         display: flex;
         box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.05);
-        border: 1px solid #e6e7e8;
-        background-color: #f9f9fa;
+        border: 1px solid $iron;
+        background-color: $athensGray;
     }
 
     &__items-img {
@@ -41,7 +41,7 @@
         color: $RollingStone;
         font-size: .8125rem;
         margin-top: 0;
-        border-bottom: 1px solid #e6e7e8;
+        border-bottom: 1px solid $iron;
         padding-bottom: 12px;
         padding-right: 20px;
         margin-bottom: 3px;
@@ -53,13 +53,13 @@
         color: $RollingStone;
         font-size: .8125rem;
         text-transform: uppercase;
-        border-left: 1px solid #e6e7e8;
+        border-left: 1px solid $iron;
         padding-left: 5px;
     }
 
     &__time {
         float: right;
-        color: #a9aeb0;
+        color: $grayChateau;
         font-size: .75rem;
         text-transform: uppercase;
         font-weight: 700;

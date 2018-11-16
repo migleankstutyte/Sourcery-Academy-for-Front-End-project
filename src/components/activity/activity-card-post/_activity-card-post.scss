@@ -1,10 +1,9 @@
-$mainFont: proxima-nova, sans-serif;
 
 //Blog Post style
 
 .post-wrapper {
     background-color: $MoreWhite;
-    border: 1px solid #e6e7e8;
+    border: 1px solid $iron;
     grid-column-start: 1;
     grid-column-end: 6;
 }
