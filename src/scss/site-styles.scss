@@ -26,7 +26,10 @@
 // Components
 @import 'components/helpers',
 '../components/header/header',
-'../components/article/activity-card-post',
+'../components/article/activity-card-post/activity-card-post',
+'../components/article/activity-card-post/activity-card-header/activity-card-header',
+'../components/article/activity-card-post/activity-card-content/activity-card-content',
+'../components/article/activity-card-post/activity-card-comments/activity-card-comments',
 '../components/footer/footer';
 
 // Print stylesheet
