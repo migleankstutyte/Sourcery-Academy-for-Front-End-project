@@ -1,0 +1,35 @@
+.activity-filter {
+    background-color: $white;
+    height: 48px;
+    box-shadow: 0 1px 0 $iron;
+    font-family: $font-primary;
+    font-size: .875rem;
+    font-weight: $weight-regular;
+    display: flex;
+    text-align: center;
+}
+
+.activity-filter__list {
+    @include reset-list-style;
+    grid-column: 1/5;
+    display: flex;
+}
+
+.activity-filter__list-item {
+    margin: 0 10px;
+    padding: 18px 10px 7px 10px;
+
+    &.is-active, &:hover {
+        border-bottom: 2px solid $curious-blue;
+        border-radius: 1px;
+    }
+}
+
+.activity-filter__list-item a {
+    color: $rolling-stone;
+    text-decoration: none;
+
+    &.is-active {
+        color: $woodsmoke;
+    }
+}

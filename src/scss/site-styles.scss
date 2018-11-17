@@ -26,10 +26,14 @@
 // Components
 @import 'components/helpers',
 '../components/header/header',
-'../components/footer/footer';
+'../components/footer/footer',
+'../components/activity/filter-bar/filter';
 
 // Print stylesheet
 @import 'print';
+
+// Fonts
+@import url('https://use.typekit.net/chf3btc.css');
 
 // grid declaration
 .grid {
@@ -44,7 +48,7 @@
 }
 .side-bar-content {
     grid-column: 4/16;
-} 
+}
 main {
     margin-top: 56px; // that content would be seen below header, not on it
 }

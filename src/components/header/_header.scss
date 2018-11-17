@@ -35,8 +35,8 @@
 .header-navigation-text {
     color: #7b8487;
     text-decoration: none;
-    font-family: proxima-nova, sans-serif;
-    font-weight: 400;
+    font-family: $font-primary;
+    font-weight: $weight-regular;
     text-transform: uppercase;
     font-size: 0.8em;
 }
