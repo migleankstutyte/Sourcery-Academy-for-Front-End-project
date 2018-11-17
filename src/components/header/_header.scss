@@ -7,6 +7,7 @@
     justify-content: center;
     position: fixed;
     top: 0;
+    z-index: $z-header;
 }
 // page header container for logo, nav and profile purposes
 .page-header {

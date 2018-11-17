@@ -1,0 +1,161 @@
+// bridge page layout
+.bridge-content {
+    max-width: 1180px;
+    margin: auto;
+}
+
+// bridge page team row
+.bridge {
+    grid-column: 1/16;
+    //bridge team name
+    &__name {
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 0.4;
+        padding-bottom: 9px;
+        padding-top: 47px;
+    }
+    &__name--leadership {
+        color: $OxfordBlue;
+    }
+    &__name--project,
+    &__name--marketing {
+    color: $StTropaz;
+    }
+    &__name--ui {
+        color: $CuriousBlue;
+    }
+    &__name--web {
+        color: $PersianRed;
+    }
+}
+
+//bridge line and underline
+.bridge-line {
+    position: relative;
+
+    &__long {
+        height: 3px;
+        border-radius: 1px 0 0 1px;
+        opacity: 0.1;
+        margin-bottom: 20px;
+    }
+    &__long--leadership {
+        background-color: $OxfordBlue;
+    }
+    &__long--project,
+    &__long--marketing {
+        background-color: $StTropaz;
+    }
+    &__long--ui {
+        background-color: $CuriousBlue;
+    }
+    &__long--web {
+        background-color: $PersianRed;
+    }
+    &__underline {
+        position: absolute;
+        top: 0;
+        height: 3px;
+    }
+    &__underline--leadership {
+        background-color: $OxfordBlue;
+        width: 139px;
+    }
+    &__underline--project {
+        background-color: $StTropaz;
+        width: 238px;
+    }
+    &__underline--ui {
+        background-color: $CuriousBlue;
+        width: 145px;
+    }
+    &__underline--web {
+        background-color: $PersianRed;
+        width: 237px;
+    }
+    &__underline--marketing {
+        background-color: $StTropaz;
+        width: 197px;
+    }
+}
+
+// bridge-team (row) block, flex-box declaration
+.bridge-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & > div {
+        width: 380px;
+        // height: 100px;
+        box-shadow: 0 1px 1px $iron2;
+        border-radius: 2px;
+        margin-bottom: 20px;
+      }
+    &__photo {
+        float: left;
+        padding: 17px 20px;
+    } 
+    &__info {
+        margin-top: 20px;
+        float: left;
+        text-align: left;
+    } 
+    &__info p {
+        font-size: 0.7rem;
+        font-weight: 400;
+        line-height: 1.2;
+        text-transform: uppercase;
+        color: $CuriousBlue;
+        margin-top: 0px;
+    } 
+    &__info h2 {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.2;
+        color: $Woodsmoke;
+        margin-bottom: 0px;
+    } 
+    &__member--invisible {
+        box-shadow: none !important;
+    }
+}
+
+// Responsive layout
+@media (max-width: 1200px) {
+    .bridge {
+        margin-left: 20px;
+    }
+}
+@media (max-width: 1180px) {
+    .bridge-team {
+        justify-content: space-evenly;
+        &__member {
+            max-width: 260px;
+        }
+    }
+}
+@media (max-width: 800px) {
+    .bridge-team {
+        justify-content: space-around;
+        &__member {
+            max-width: 300px;
+        }
+    }
+}
+@media (max-width: 640px) {
+    .bridge-team {
+        &__member {
+            max-width: 380px;
+        }
+    }
+}
+@media (max-width: 440px) {
+    .bridge-team {
+        &__member {
+            max-width: 300px;
+        }
+    }
+}

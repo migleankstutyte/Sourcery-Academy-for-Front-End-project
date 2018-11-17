@@ -8,6 +8,7 @@
 @import 'base/functions',
 'base/colors', // Only color variables.
 'base/variables', // All other variables, including typography, measurements and etc.
+'base/z-indexes', // Z-indexes
 'mixins/mixins', // Mixins, functions, extenders.
 'vendor/normalize', // Contains CSS output to fix cross-browser inconsistencies.
 'base/svg-sprite';
@@ -26,6 +27,7 @@
 // Components
 @import 'components/helpers',
 '../components/header/header',
+'../components/bridge/bridge',
 '../components/footer/footer';
 
 // Print stylesheet
@@ -45,6 +47,10 @@
 .side-bar-content {
     grid-column: 4/16;
 } 
+.content {
+    grid-column: 1/16;
+}
 main {
     margin-top: 56px; // that content would be seen below header, not on it
+    background-color: $Porcelain;
 }
