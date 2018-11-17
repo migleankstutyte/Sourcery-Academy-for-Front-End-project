@@ -89,10 +89,10 @@
 
     & > div {
         width: 380px;
-        // height: 100px;
         box-shadow: 0 1px 1px $iron2;
         border-radius: 2px;
         margin-bottom: 20px;
+        background-color: $white;
       }
     &__photo {
         float: left;
