@@ -1,5 +1,5 @@
 .label-text {
-    $inactive-color: $rollingstone;
+    $inactive-color: $rolling-stone;
     color: $inactive-color;
     font-size: 0.875rem;
     font-weight: 400;
@@ -10,8 +10,8 @@
 .notifications-bar-checkbox {
     $inner-color: $porcelain;
     $outer-color: $mischka;
-    $checked-background: $curiousblue;
-    $checked-text: $woodsmoke;
+    $checked-background: $curious-blue;
+    $checked-text: $wood-smoke;
     display: none;
     + .label-text::before {
         display: inline-block;

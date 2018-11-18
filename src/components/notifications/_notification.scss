@@ -1,7 +1,7 @@
 .notification {
-    $separator: $ironlight;
+    $separator: $iron-light;
     $text-active: $scooter;
-    $text: $rollingstone;
+    $text: $rolling-stone;
     $text-time: #a9aeb0;
     display: flex;
     justify-content: space-between;
@@ -23,8 +23,8 @@
         font-weight: $weight-regular;
         font-family: $font-primary;
         line-height: 1.48;
-        margin-left: 1.5rem;
         margin: 0;
+        margin-left: 1.5rem;
     }
 
     &-icon {
