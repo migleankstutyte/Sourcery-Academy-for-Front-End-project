@@ -1,8 +1,10 @@
+$mainFont: proxima-nova, sans-serif;
 
 //Blog Post style
 
 .post-wrapper {
-    background-color: $white;
-    border: 1px solid $ironBorders;
-    grid-column: 1/6;
+    background-color: $MoreWhite;
+    border: 1px solid $iron-light;
+    grid-column-start: 1;
+    grid-column-end: 6;
 }
