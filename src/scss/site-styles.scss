@@ -45,6 +45,15 @@
 .side-bar-content {
     grid-column: 4/16;
 } 
-main {
+.page-container {
+    background-color: $porcelain;
     margin-top: 56px; // that content would be seen below header, not on it
+}
+
+// Responsive layout
+@media (max-width: 1200px) {
+    .page-container  {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
 }
