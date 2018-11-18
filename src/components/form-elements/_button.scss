@@ -14,12 +14,12 @@
     box-shadow: inset 1px 0 0 #e6e7e8;
 
     &__icon {
-        color: $linkBlue;
+        color: $scooter;
         font-size: 18px;
     }
 
     &__number {
-        color: $thunderBlack;
+        color: $thunder-black;
         margin: 0 3px 0 8px;
         font-size: 13px;
         font-weight: 700;
@@ -28,7 +28,7 @@
 
     &__text {
         display: inline-block;
-        color: $RollingStone;
+        color: $rolling-stone;
         font-size: 13px;
         text-transform: uppercase;
         font-weight: 400;
@@ -36,14 +36,14 @@
 
     &--blue-font {
         span {
-            color: $mainBlue;
+            color: $scooter;
         }
     }
 
     &--comment-field {
         height: 39px;
         width: auto;
-        background-color: #f9f9fa;
+        background-color: $athens-gray;
         box-shadow: none;
         padding: 0;
 

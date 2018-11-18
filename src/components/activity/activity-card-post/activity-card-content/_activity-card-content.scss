@@ -1,6 +1,6 @@
 .post-content {
     &__article {
-        padding: 0 55px 0 20px;
+        padding: 0 20px 0 20px;
     }
 
     &__heading {
@@ -8,14 +8,16 @@
         font-size: 1.063rem;
         line-height: 1.2;
         margin-top: 0;
-        font-family: $mainFont;
-        font-weight: 700;
+        font-family: $font-primary;
+        font-weight: $weight-bold;
     }
 
     &__text {
         color: $rolling-stone;
         font-size: 0.9375rem;
-        line-height: 1.2
+        line-height: 1.2;
+        margin-bottom: 17px;
+        margin-top: 0px;
     }
 
     &__img {
