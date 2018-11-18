@@ -1,6 +1,8 @@
 .notification {
     $separator: $ironlight;
-    $active: $scooter;
+    $text-active: $scooter;
+    $text: $rollingstone;
+    $text-time: #a9aeb0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,7 +19,7 @@
     }
 
     &-time {
-        color: #a9aeb0;
+        color: $text-time;
         font-size: 0.875rem;
         font-weight: $weight-regular;
         font-family: $font-primary;
@@ -47,7 +49,7 @@
         font-family: $font-primary;
         line-height: 1.25;
         &--clickable {
-            color: $scooter;
+            color: $text-active;
             text-decoration: none;
         }
     }
