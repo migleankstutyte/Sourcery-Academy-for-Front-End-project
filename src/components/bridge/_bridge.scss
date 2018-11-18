@@ -1,31 +1,36 @@
 // bridge page layout
 .bridge-content {
-    max-width: 1180px;
     margin: auto;
+    max-width: 1180px;
 }
 
 // bridge page team row
 .bridge {
     grid-column: 1/16;
     //bridge team name
+
     &__name {
-        text-transform: uppercase;
         font-size: 1rem;
         font-weight: 400;
-        line-height: 0.4;
+        line-height: .4;
         padding-bottom: 9px;
         padding-top: 47px;
+        text-transform: uppercase;
     }
+
     &__name--leadership {
         color: $oxford-blue;
     }
+
     &__name--project,
     &__name--marketing {
         color: $st-tropaz;
     }
+
     &__name--ui {
         color: $curious-blue;
     }
+
     &__name--web {
         color: $persian-red;
     }
@@ -36,49 +41,60 @@
     position: relative;
 
     &__long {
-        height: 3px;
         border-radius: 1px 0 0 1px;
-        opacity: 0.1;
+        height: 3px;
         margin-bottom: 20px;
+        opacity: .1;
     }
+
     &__long--leadership {
         background-color: $oxford-blue;
     }
+
     &__long--project,
     &__long--marketing {
         background-color: $st-tropaz;
     }
+
     &__long--ui {
         background-color: $curious-blue;
     }
+
     &__long--web {
         background-color: $persian-red;
     }
+
     &__underline {
+        height: 3px;
         position: absolute;
         top: 0;
-        height: 3px;
     }
+
     &__underline--leadership {
         background-color: $oxford-blue;
         width: 139px;
     }
+
     &__underline--project {
         background-color: $st-tropaz;
         width: 238px;
     }
+
     &__underline--ui {
         background-color: $curious-blue;
         width: 145px;
     }
+
     &__underline--web {
         background-color: $persian-red;
         width: 237px;
     }
+
     &__underline--marketing {
         background-color: $st-tropaz;
         width: 197px;
     }
+
 }
 
 // bridge-team (row) block, flex-box declaration
@@ -88,39 +104,45 @@
     justify-content: space-between;
 
     & > div {
-        width: 380px;
-        box-shadow: 0 1px 1px $iron-dark;
-        border-radius: 2px;
-        margin-bottom: 20px;
         background-color: $white;
+        border-radius: 2px;
+        box-shadow: 0 1px 1px $iron-dark;
+        margin-bottom: 20px;
+        width: 380px;
       }
+
     &__photo {
         float: left;
         padding: 17px 20px;
     } 
+
     &__info {
-        margin-top: 20px;
         float: left;
+        margin-top: 20px;
         text-align: left;
     } 
+
     &__info p {
-        font-size: 0.7rem;
+        color: $curious-blue;
+        font-size: .7rem;
         font-weight: 400;
         line-height: 1.2;
+        margin-top: 0;
         text-transform: uppercase;
-        color: $curious-blue;
-        margin-top: 0px;
     } 
+
     &__info h2 {
+        color: $woodsmoke;
         font-size: 1rem;
         font-weight: 400;
         line-height: 1.2;
-        color: $woodsmoke;
-        margin-bottom: 0px;
+        margin-bottom: 0;
     } 
+
     &__member--invisible {
         box-shadow: none !important;
     }
+
 }
 
 // Responsive layout
@@ -132,17 +154,21 @@
 @media (max-width: 1180px) {
     .bridge-team {
         justify-content: space-evenly;
+
         &__member {
             max-width: 260px;
         }
+
     }
 }
 @media (max-width: 800px) {
     .bridge-team {
         justify-content: space-around;
+
         &__member {
             max-width: 300px;
         }
+        
     }
 }
 @media (max-width: 640px) {
