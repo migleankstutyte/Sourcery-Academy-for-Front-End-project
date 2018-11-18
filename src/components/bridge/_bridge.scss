@@ -17,17 +17,17 @@
         padding-top: 47px;
     }
     &__name--leadership {
-        color: $OxfordBlue;
+        color: $oxford-blue;
     }
     &__name--project,
     &__name--marketing {
-    color: $StTropaz;
+        color: $st-tropaz;
     }
     &__name--ui {
-        color: $CuriousBlue;
+        color: $curious-blue;
     }
     &__name--web {
-        color: $PersianRed;
+        color: $persian-red;
     }
 }
 
@@ -42,17 +42,17 @@
         margin-bottom: 20px;
     }
     &__long--leadership {
-        background-color: $OxfordBlue;
+        background-color: $oxford-blue;
     }
     &__long--project,
     &__long--marketing {
-        background-color: $StTropaz;
+        background-color: $st-tropaz;
     }
     &__long--ui {
-        background-color: $CuriousBlue;
+        background-color: $curious-blu;
     }
     &__long--web {
-        background-color: $PersianRed;
+        background-color: $persian-red;
     }
     &__underline {
         position: absolute;
@@ -60,23 +60,23 @@
         height: 3px;
     }
     &__underline--leadership {
-        background-color: $OxfordBlue;
+        background-color: $oxford-blue;
         width: 139px;
     }
     &__underline--project {
-        background-color: $StTropaz;
+        background-color: $st-tropaz;
         width: 238px;
     }
     &__underline--ui {
-        background-color: $CuriousBlue;
+        background-color: $curious-blue;
         width: 145px;
     }
     &__underline--web {
-        background-color: $PersianRed;
+        background-color: $persian-red;
         width: 237px;
     }
     &__underline--marketing {
-        background-color: $StTropaz;
+        background-color: $st-tropaz;
         width: 197px;
     }
 }
@@ -89,7 +89,7 @@
 
     & > div {
         width: 380px;
-        box-shadow: 0 1px 1px $iron2;
+        box-shadow: 0 1px 1px $iron-dark;
         border-radius: 2px;
         margin-bottom: 20px;
         background-color: $white;
@@ -108,14 +108,14 @@
         font-weight: 400;
         line-height: 1.2;
         text-transform: uppercase;
-        color: $CuriousBlue;
+        color: $curious-blue;
         margin-top: 0px;
     } 
     &__info h2 {
         font-size: 1rem;
         font-weight: 400;
         line-height: 1.2;
-        color: $Woodsmoke;
+        color: $woodsmoke;
         margin-bottom: 0px;
     } 
     &__member--invisible {
