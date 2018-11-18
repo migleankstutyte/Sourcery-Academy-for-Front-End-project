@@ -6,7 +6,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.25rem 0;
     border-bottom: $separator solid 1px;
 
     &__main-info {
@@ -25,12 +24,14 @@
         font-family: $font-primary;
         line-height: 1.48;
         margin-left: 1.5rem;
+        margin: 0;
     }
 
     &-icon {
         flex-shrink: 0;
         margin-right: 0.9375rem;
         width: 1.063rem;
+        padding: 1.563rem 0;
         height: auto;
     }
 
@@ -40,6 +41,7 @@
         border-radius: 100%;
         width: 3.125rem;
         height: 3.125rem;
+        padding: 1.25rem 0;
     }
 
     &-text {
@@ -48,6 +50,7 @@
         font-weight: $weight-regular;
         font-family: $font-primary;
         line-height: 1.25;
+        margin: 0;
         &--clickable {
             color: $text-active;
             text-decoration: none;
