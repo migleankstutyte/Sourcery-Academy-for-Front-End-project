@@ -1,0 +1,27 @@
+.dates {
+    $separator: $ironlight;
+    width: 100%;
+    margin-top: 2.25rem;
+
+    &__date {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3.438rem;
+    }
+
+    &__date-title {
+        color: #13191b;
+        font-size: 1.125rem;
+        font-weight: $weight-regular;
+        font-family: $font-primary;
+        line-height: 1.15;
+        padding-bottom: 0.6875rem;
+        border-bottom: $ironlight solid 1px;
+    }
+
+    &__date-notifications {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+}

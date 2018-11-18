@@ -1,0 +1,54 @@
+.notification {
+    $separator: $ironlight;
+    $active: $scooter;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 0;
+    border-bottom: $separator solid 1px;
+
+    &__main-info {
+        display: flex;
+        align-items: center;
+    }
+
+    &__secondary-info {
+        display: flex;
+    }
+
+    &-time {
+        color: #a9aeb0;
+        font-size: 0.875rem;
+        font-weight: $weight-regular;
+        font-family: $font-primary;
+        line-height: 1.48;
+        margin-left: 1.5rem;
+    }
+
+    &-icon {
+        flex-shrink: 0;
+        margin-right: 0.9375rem;
+        width: 1.063rem;
+        height: auto;
+    }
+
+    &-profile-picture {
+        margin-right: 1.188rem;
+        flex-shrink: 0;
+        border-radius: 100%;
+        width: 3.125rem;
+        height: 3.125rem;
+    }
+
+    &-text {
+        color: #7b8487;
+        font-size: 1rem;
+        font-weight: $weight-regular;
+        font-family: $font-primary;
+        line-height: 1.25;
+        &--clickable {
+            color: $scooter;
+            text-decoration: none;
+        }
+    }
+}
