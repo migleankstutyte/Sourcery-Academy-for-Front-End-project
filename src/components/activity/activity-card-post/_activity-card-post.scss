@@ -2,8 +2,7 @@
 //Blog Post style
 
 .post-wrapper {
-    background-color: $MoreWhite;
-    border: 1px solid $iron;
-    grid-column-start: 1;
-    grid-column-end: 6;
+    background-color: $white;
+    border: 1px solid $ironBorders;
+    grid-column: 1/6;
 }
