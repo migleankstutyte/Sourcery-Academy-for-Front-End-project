@@ -35,22 +35,26 @@
 
 // grid declaration
 .grid {
+    column-gap: $grid-column-gap;
     display: $grid;
     grid-template-columns: $grid-template-columns;
-    width: $max-width;
-    column-gap: $grid-column-gap;
     margin: auto;
+    width: $max-width;
 }
+
 .side-bar {
     grid-column: 1/4; 
 }
+
 .side-bar-content {
     grid-column: 4/16;
 } 
+
 .content {
     grid-column: 1/16;
 }
+
 main {
-    margin-top: 56px; // that content would be seen below header, not on it
     background-color: $porcelain;
+    margin-top: 56px; // that content would be seen below header, not on it
 }
