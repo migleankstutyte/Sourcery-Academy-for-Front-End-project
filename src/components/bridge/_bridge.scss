@@ -140,6 +140,7 @@
     } 
 
     &__member--invisible {
+        background-color: inherit !important;
         box-shadow: none !important;
     }
 
@@ -154,11 +155,6 @@
 @media (max-width: 1180px) {
     .bridge-team {
         justify-content: space-evenly;
-
-        &__member {
-            max-width: 260px;
-        }
-
     }
 }
 @media (max-width: 800px) {
