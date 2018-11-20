@@ -1,3 +1,5 @@
+$separator-color: $outer-space;
+
 // div purpose to add color for header
 .header-color-wrapper {
     height: $header-height;
@@ -81,7 +83,7 @@
     padding: 0 15px;
 }
 .profile-dropdown-separator {
-    border-bottom: solid 1px $header-separator;
+    border-bottom: solid 1px $separator-color;
 }
 //SHOW DROP DOWN
 .profile-dropdown-icon {
