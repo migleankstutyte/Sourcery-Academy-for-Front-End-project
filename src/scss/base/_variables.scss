@@ -1,6 +1,7 @@
 
 $base-line-height: 1.5;
 $base-font-size: 16px;
+$mainFont: proxima-nova, sans-serif;
 
 //widths, heights, sizes, timings, settings
 
@@ -29,13 +30,8 @@ $grid-column-gap: 20px;
 $opacity-1: 1;
 
 //typography
-
 $font-primary: 'proxima-nova', sans-serif; // 400 700 italic
-
 $font-secondary: 'proxima-nova-condensed', sans-serif; // 400 700 italic
-
-$font-semibold: 'proxima-nova-semibold', sans-serif;
-
 $weight-regular: 400;
-
 $weight-bold: 700;
+$font-semibold: 'proxima-nova-semibold', sans-serif;

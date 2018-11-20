@@ -4,6 +4,7 @@
     "description": "Starter project",
     "main": "gulpfile.js",
     "dependencies": {
+        "@fortawesome/fontawesome-free": "5.5.0",
         "autoprefixer": "8.1.0",
         "event-stream": "3.3.4",
         "gulp": "3.9.1",
@@ -30,8 +31,8 @@
         "gulp-task-loader": "1.4.4",
         "gulp-uglify": "3.0.0",
         "gulp-watch": "5.0.0",
-        "yargs": "11.0.0",
-        "run-sequence": "2.2.1"
+        "run-sequence": "2.2.1",
+        "yargs": "11.0.0"
     },
     "scripts": {
         "start": "gulp develop-plain",
