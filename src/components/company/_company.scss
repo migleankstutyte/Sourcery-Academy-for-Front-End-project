@@ -15,12 +15,11 @@
 
     &__item-link {
         color: $woodsmoke;
-        display: block;
-        text-decoration: none;
         display: flex;
         justify-content: space-between;
+        text-decoration: none;
 
-        &-img {
+        img {
             margin-right: 32px;
         }   
 
@@ -29,6 +28,4 @@
             font-weight: 600;
         }   
     }    
-
-
 }
