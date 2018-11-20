@@ -1,9 +1,54 @@
 .button {
-    &--primary {
+    &--primary {}
+
+    &--secondary {}
+}
+
+// Activity-card-post buttons
+.social-button {
+    background-color: $white;
+    border: 0;
+    box-shadow: inset 1px 0 0 $iron-light;
+    height: 50px;
+    width: 50%;
+
+    &__icon {
+        color: $scooter;
+        font-size: 1.125rem;
+    }
+
+    &__number {
+        color: $thunder-black;
+        font-size: .8125rem;
+        font-weight: 700;
+        margin: 0 3px 0 8px;
 
     }
 
-    &--secondary {
+    &__text {
+        color: $rolling-stone;
+        display: inline-block;
+        font-size: .8125rem;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
 
+    &--blue-font {
+        span {
+            color: $scooter;
+        }
+    }
+
+    &--comment-field {
+        background-color: $athens-gray;
+        box-shadow: none;
+        height: 39px;
+        padding: 0;
+        width: auto;
+
+        &__tex {
+            margin-bottom: 7px;
+            margin-top: 8px;
+        }
     }
 }
