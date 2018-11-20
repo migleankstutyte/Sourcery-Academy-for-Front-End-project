@@ -1,0 +1,29 @@
+.dates {
+    $_separator: $iron-light;
+    $_date-text: $wood-smoke;
+    width: 100%;
+    margin-top: 36px;
+
+    &__date {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 55px;
+    }
+
+    &__date-title {
+        color: $_date-text;
+        font-size: 1.125rem;
+        font-weight: $weight-regular;
+        font-family: $font-primary;
+        line-height: 1.15;
+        padding-bottom: 11px;
+        border-bottom: 1px solid $_separator;
+        margin:0;
+    }
+
+    &__date-notifications {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+}
