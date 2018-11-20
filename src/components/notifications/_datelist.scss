@@ -2,12 +2,12 @@
     $separator: $iron-light;
     $date-text: $wood-smoke;
     width: 100%;
-    margin-top: 2.25rem;
+    margin-top: 36px;
 
     &__date {
         display: flex;
         flex-direction: column;
-        margin-bottom: 3.438rem;
+        margin-bottom: 55px;
     }
 
     &__date-title {
@@ -16,8 +16,8 @@
         font-weight: $weight-regular;
         font-family: $font-primary;
         line-height: 1.15;
-        padding-bottom: 0.6875rem;
-        border-bottom: $iron-light solid 1px;
+        padding-bottom: 11px;
+        border-bottom: 1px solid $iron-light;
         margin:0;
     }
 

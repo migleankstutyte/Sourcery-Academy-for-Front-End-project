@@ -1,12 +1,17 @@
 .notification {
-    $separator: $iron-light;
-    $text-active: $scooter;
-    $text: $rolling-stone;
-    $text-time: #a9aeb0;
+    $_separator: $iron-light;
+    $_text-active: $scooter;
+    $_text: $rolling-stone;
+    $_text-time: #a9aeb0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: $separator solid 1px;
+    border-bottom: solid 1px $_separator;
+    padding: 20px 0;
+
+    &--without-profile-picture {
+        padding: 25px 0;
+    }
 
     &__main-info {
         display: flex;
@@ -18,30 +23,29 @@
     }
 
     &-time {
-        color: $text-time;
+        color: $_text-time;
         font-size: 0.875rem;
         font-weight: $weight-regular;
         font-family: $font-primary;
         line-height: 1.48;
         margin: 0;
-        margin-left: 1.5rem;
+        margin-left: 10px;
     }
 
     &-icon {
         flex-shrink: 0;
-        margin-right: 0.9375rem;
-        width: 1.063rem;
-        padding: 1.563rem 0;
-        height: auto;
+        margin-right: 15px;
+        //width: 1.063rem;
+        justify-self: center;
+        //height: auto;
     }
 
     &-profile-picture {
-        margin-right: 1.188rem;
+        margin-right: 19px;
         flex-shrink: 0;
         border-radius: 100%;
-        width: 3.125rem;
-        height: 3.125rem;
-        padding: 1.25rem 0;
+        //width: 50px;
+        //height: 50px;
     }
 
     &-text {
@@ -52,7 +56,7 @@
         line-height: 1.25;
         margin: 0;
         &--clickable {
-            color: $text-active;
+            color: $_text-active;
             text-decoration: none;
         }
     }
