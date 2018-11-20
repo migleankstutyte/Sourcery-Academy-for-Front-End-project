@@ -18,14 +18,15 @@
         display: block;
         text-decoration: none;
 
+        &-img {
+            float: right;
+            margin-right: 20px;
+        }    
         &:focus {
             color: $curious-blue;
             font-weight: 600;
         }   
     }    
 
-    &__item-link img {
-        padding-left: 125px;
-    }    
 
 }
