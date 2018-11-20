@@ -1,3 +1,5 @@
+$separator-color: $outer-space;
+
 // div purpose to add color for header
 .header-color-wrapper {
     background-color: $black;
@@ -95,7 +97,7 @@
 }
 
 .profile-dropdown-separator {
-    border-bottom: solid 1px $outer-space;
+    border-bottom: solid 1px $separator-color;
 }
 
 //SHOW DROP DOWN
