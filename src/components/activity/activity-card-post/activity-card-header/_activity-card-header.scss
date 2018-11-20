@@ -1,6 +1,6 @@
 .post-header {
-    height: 90px;
     border-radius: 2px;
+    height: 90px;
 
     &__person {
         display: inline-block;
@@ -20,41 +20,40 @@
 
     &__person-item-name {
         color: $black;
-        font-size: 1rem;
         font-family: $font-primary;
-        line-height: .5;
+        font-size: 1rem;
         font-weight: $weight-bold;
+        line-height: .5;
     }
 
     &__person-item-date {
         color: $gray-chateau;
+        font-family: $font-primary;
         font-size: .75rem;
+        font-weight: $weight-bold;
         line-height: .5;
         text-transform: uppercase;
-        font-family: $font-primary;
-        font-weight: $weight-bold;
     }
 
     .post-logo {
+        align-items: center;
+        background-color: $scooter;
+        border-radius: 2px 0 0 2px;
         display: flex;
         float: right;
-        width: 61px;
         height: 30px;
-        border-radius: 2px 0 0 2px;
-        background-color: $scooter;
-        align-items: center;
         justify-content: center;
         position: relative;
         top: 30px;
+        width: 61px;
 
         &__text {
             color: $white;
+            font-family: $font-primary;
             font-size: .75rem;
             font-weight: 400;
             line-height: 16.1px;
             text-transform: uppercase;
-            font-family: $scooter;
-            font-weight: $weight-bold;
         }
     }
 }

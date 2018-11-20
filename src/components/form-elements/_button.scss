@@ -6,32 +6,31 @@
 
 // Activity-card-post buttons
 .social-button {
-    width: 50%;
-    height: 50px;
-    box-shadow: inset 0 0 0 #e6e7e8;
     background-color: $white;
-    border: none;
-    box-shadow: inset 1px 0 0 #e6e7e8;
+    border: 0;
+    box-shadow: inset 1px 0 0 $iron-light;
+    height: 50px;
+    width: 50%;
 
     &__icon {
         color: $scooter;
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     &__number {
         color: $thunder-black;
-        margin: 0 3px 0 8px;
-        font-size: 13px;
+        font-size: .8125rem;
         font-weight: 700;
+        margin: 0 3px 0 8px;
 
     }
 
     &__text {
-        display: inline-block;
         color: $rolling-stone;
-        font-size: 13px;
-        text-transform: uppercase;
+        display: inline-block;
+        font-size: .8125rem;
         font-weight: 400;
+        text-transform: uppercase;
     }
 
     &--blue-font {
@@ -41,15 +40,15 @@
     }
 
     &--comment-field {
-        height: 39px;
-        width: auto;
         background-color: $athens-gray;
         box-shadow: none;
+        height: 39px;
         padding: 0;
+        width: auto;
 
-        &__text{
-            margin-top: 8px;
+        &__tex {
             margin-bottom: 7px;
+            margin-top: 8px;
         }
     }
 }
