@@ -17,11 +17,13 @@
         color: $woodsmoke;
         display: block;
         text-decoration: none;
+        display: flex;
+        justify-content: space-between;
 
         &-img {
-            float: right;
-            margin-right: 20px;
-        }    
+            margin-right: 32px;
+        }   
+
         &:focus {
             color: $curious-blue;
             font-weight: 600;
