@@ -35,17 +35,13 @@
     &-icon {
         flex-shrink: 0;
         margin-right: 15px;
-        //width: 1.063rem;
         justify-self: center;
-        //height: auto;
     }
 
     &-profile-picture {
         margin-right: 19px;
         flex-shrink: 0;
         border-radius: 100%;
-        //width: 50px;
-        //height: 50px;
     }
 
     &-text {
@@ -55,6 +51,7 @@
         font-family: $font-primary;
         line-height: 1.25;
         margin: 0;
+        
         &--clickable {
             color: $_text-active;
             text-decoration: none;

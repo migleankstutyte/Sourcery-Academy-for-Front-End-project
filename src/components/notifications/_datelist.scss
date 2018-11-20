@@ -1,6 +1,6 @@
 .dates {
-    $separator: $iron-light;
-    $date-text: $wood-smoke;
+    $_separator: $iron-light;
+    $_date-text: $wood-smoke;
     width: 100%;
     margin-top: 36px;
 
@@ -11,13 +11,13 @@
     }
 
     &__date-title {
-        color: $date-text;
+        color: $_date-text;
         font-size: 1.125rem;
         font-weight: $weight-regular;
         font-family: $font-primary;
         line-height: 1.15;
         padding-bottom: 11px;
-        border-bottom: 1px solid $iron-light;
+        border-bottom: 1px solid $_separator;
         margin:0;
     }
 
