@@ -31,27 +31,9 @@
 // Print stylesheet
 @import 'print';
 
-// grid declaration
-.grid {
-    column-gap: $grid-column-gap;
-    display: $grid;
-    grid-template-columns: $grid-template-columns;
-    margin: auto;
-    width: $max-width;
-}
-
-.side-bar {
-    grid-column: 1/4; 
-}
-
-.side-bar-content {
-    grid-column: 4/16;
-} 
-
 // flex-box declaration
 .flex {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin: auto;
     max-width: 1180px;
