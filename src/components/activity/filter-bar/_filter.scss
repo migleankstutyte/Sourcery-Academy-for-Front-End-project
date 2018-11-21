@@ -1,0 +1,40 @@
+$_color-text: $rolling-stone;
+$_color-text-active: $wood-smoke;
+$_color-border-active: $curious-blue;
+$_color-box-shadow: $iron-light;
+
+.activity-filter {
+    background-color: $white;
+    height: 48px;
+    box-shadow: 0 1px 0 $_color-box-shadow;
+    font-family: $font-primary;
+    font-size: .875rem;
+    font-weight: $weight-regular;
+    display: flex;
+    text-align: center;
+}
+
+.activity-filter__list {
+    @include reset-list-style;
+    display: flex;
+}
+
+.activity-filter__list-item {
+    margin-right: 23px;
+    padding: 18px 10px 7px 10px;
+
+
+    &.is-active, &:hover {
+        border-bottom: 2px solid $_color-border-active;
+        border-radius: 1px;
+    }
+}
+
+.activity-filter__list-item a {
+    color: $_color-text;
+    text-decoration: none;
+
+    &.is-active {
+        color: $_color-text-active;
+    }
+}

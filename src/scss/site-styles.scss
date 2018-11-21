@@ -1,5 +1,8 @@
 @charset 'utf-8';
 
+// Fonts
+@import url('https://use.typekit.net/chf3btc.css');
+
 @import 'base/config';
 // Framework configuration or other settings
 // Frameworks
@@ -34,13 +37,11 @@
 '../components/activity/activity-card-post/activity-card-header/activity-card-header',
 '../components/activity/activity-card-post/activity-card-content/activity-card-content',
 '../components/activity/activity-card-post/activity-card-comments/activity-card-comments',
+'../components/activity/filter-bar/filter',
 '../components/footer/footer';
 
 // Print stylesheet
 @import 'print';
-
-// Fonts
-@import url('https://use.typekit.net/chf3btc.css');
 
 // grid declaration
 .grid {
@@ -51,11 +52,11 @@
     margin: auto;
 }
 .side-bar {
-    grid-column: 1/4; 
+    grid-column: 1/4;
 }
 .side-bar-content {
     grid-column: 4/16;
-} 
+}
 main {
     margin-top: 56px; // that content would be seen below header, not on it
 }
