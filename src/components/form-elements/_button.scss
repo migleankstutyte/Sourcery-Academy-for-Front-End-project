@@ -52,3 +52,21 @@
         }
     }
 }
+
+.button-input {
+    background: 0 0;
+    border: 0;
+    height: 23px;
+    position: absolute;
+    right: 5px;
+    top: 9px;
+    width: 34px;
+    cursor: pointer;
+    transition: width 2s;
+    &:focus {
+        outline: none;
+        svg{
+           width: 35px; 
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.upload-wrapper {
+    background-color: $white;
+    border: 1px solid $iron-light;
+    padding: 27px 21px 25px 19px;
+
+    &__input {
+        display: flex;
+        position: relative;
+    }
+}
