@@ -8,30 +8,30 @@ $_color-box-shadow: $iron-light;
     height: 48px;
     box-shadow: 0 1px 0 $_color-box-shadow;
     font-size: .875rem;
-    display: flex;
     text-align: center;
 }
 
 .activity-filter__list {
     @include reset-list-style;
     display: flex;
-}
 
-.activity-filter__list-item {
-    margin-right: 23px;
-    padding: 18px 10px 7px 10px;
+    &-item {
+        margin-right: 23px;
+        padding: 18px 10px 7px 10px;
+        cursor: pointer;
 
-    &.is-active, &:hover {
-        border-bottom: 2px solid $_color-border-active;
-        border-radius: 1px;
+        &--active, &:hover {
+            border-bottom: 2px solid $_color-border-active;
+            border-radius: 1px;
+        }
     }
-}
 
-.activity-filter__list-item a {
-    color: $_color-text;
-    text-decoration: none;
+    &-text {
+        color: $_color-text;
+        text-decoration: none;
 
-    &.is-active {
-        color: $_color-text-active;
+        &--active {
+            color: $_color-text-active;
+        }
     }
 }
