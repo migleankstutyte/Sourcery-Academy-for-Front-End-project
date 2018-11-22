@@ -32,7 +32,7 @@
     }
 
     &:checked + .label-text {
-        color: $checked-text;
+        color: $_checked-text;
 
         &::before {
             content: "";
