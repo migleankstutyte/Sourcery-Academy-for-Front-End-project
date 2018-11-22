@@ -39,6 +39,10 @@
 // Print stylesheet
 @import 'print';
 
+// Fonts
+@import url('https://use.typekit.net/chf3btc.css');
+
+
 // flex-box declaration
 .flex {
     display: flex;
@@ -55,6 +59,8 @@
     }
 }
 
-main {
+.page-container {
+    background-color: $porcelain; 
     margin-top: 56px; // that content would be seen below header, not on it
+    padding: 0 20px;
 }
