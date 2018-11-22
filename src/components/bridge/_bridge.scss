@@ -1,3 +1,9 @@
+$leadership-color: #354f57;
+$project-marketing-color: #256299;
+$ui-color: #30a1d6;
+$web-color: #cd2b27;
+
+
 // bridge page layout
 .flex-wrap {
     flex-wrap: wrap;
@@ -14,20 +20,20 @@
         text-transform: uppercase;
 
         &--leadership {
-            color: $oxford-blue;
+            color: $leadership-color;
         }
 
         &--project,
         &--marketing {
-            color: $st-tropaz;
+            color: $project-marketing-color;
         }
 
         &--ui {
-            color: $curious-blue;
+            color: $ui-color;
         }   
 
         &--web {
-            color: $persian-red;
+            color: $web-color;
         }
     }
 }
@@ -43,20 +49,20 @@
         opacity: .1;
 
         &--leadership {
-            background-color: $oxford-blue;
+            background-color: $leadership-color;
         }
 
         &--project,
         &--marketing {
-            background-color: $st-tropaz;
+            background-color: $project-marketing-color;
         }
 
         &--ui {
-            background-color: $curious-blue;
+            background-color: $ui-color;
         }
 
         &--web {
-            background-color: $persian-red;
+            background-color: $web-color;
         }
         }
         
@@ -67,27 +73,27 @@
         top: 0;
 
         &--leadership {
-            background-color: $oxford-blue;
+            background-color: $leadership-color;
             width: 139px;
         }
 
         &--project {
-            background-color: $st-tropaz;
+            background-color: $project-marketing-color;
             width: 238px;
         }
 
         &--ui {
-            background-color: $curious-blue;
+            background-color: $ui-color;
             width: 145px;
         }
 
         &--web {
-            background-color: $persian-red;
+            background-color: $web-color;
             width: 235px;
         }
 
         &--marketing {
-            background-color: $st-tropaz;
+            background-color: $project-marketing-color;
             width: 185px;
         }
     }
