@@ -12,6 +12,7 @@
 'base/colors', // Only color variables.
 'base/layout', // Only main layout classes
 'base/variables', // All other variables, including typography, measurements and etc.
+'base/z-indexes', // Z-indexes
 'mixins/mixins', // Mixins, functions, extenders.
 'vendor/normalize', // Contains CSS output to fix cross-browser inconsistencies.
 'base/svg-sprite';
@@ -33,6 +34,7 @@
 // Components
 @import 'components/helpers',
 '../components/header/header',
+'../components/bridge/bridge',
 '../components/company/company',
 '../components/activity/activity-card-post/activity-card-post',
 '../components/activity/activity-card-post/activity-card-header/activity-card-header',

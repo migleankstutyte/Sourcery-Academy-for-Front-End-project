@@ -1,0 +1,180 @@
+$leadership-color: #354f57;
+$project-marketing-color: #256299;
+$ui-color: #30a1d6;
+$web-color: #cd2b27;
+
+// bridge page layout
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+// bridge page team row
+.bridge {
+    //bridge team name
+    &__name {
+        font-size: 1rem;
+        line-height: .4;
+        padding-bottom: 9px;
+        padding-top: 47px;
+        text-transform: uppercase;
+
+        &--leadership {
+            color: $leadership-color;
+        }
+
+        &--project,
+        &--marketing {
+            color: $project-marketing-color;
+        }
+
+        &--ui {
+            color: $ui-color;
+        }
+
+        &--web {
+            color: $web-color;
+        }
+    }
+}
+
+//bridge line and underline
+.bridge-line {
+    position: relative;
+
+    &__long {
+        border-radius: 1px 0 0 1px;
+        height: 3px;
+        margin-bottom: 20px;
+        opacity: .1;
+
+        &--leadership {
+            background-color: $leadership-color;
+        }
+
+        &--project,
+        &--marketing {
+            background-color: $project-marketing-color;
+        }
+
+        &--ui {
+            background-color: $ui-color;
+        }
+
+        &--web {
+            background-color: $web-color;
+        }
+    }
+
+    &__underline {
+        height: 3px;
+        position: absolute;
+        top: 0;
+
+        &--leadership {
+            background-color: $leadership-color;
+            width: 139px;
+        }
+
+        &--project {
+            background-color: $project-marketing-color;
+            width: 238px;
+        }
+
+        &--ui {
+            background-color: $ui-color;
+            width: 145px;
+        }
+
+        &--web {
+            background-color: $web-color;
+            width: 235px;
+        }
+
+        &--marketing {
+            background-color: $project-marketing-color;
+            width: 185px;
+        }
+    }
+}
+
+// bridge-team (row) block, flex-box declaration
+.bridge-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 13px;
+
+    & > div {
+        background-color: $white;
+        border-radius: 2px;
+        box-shadow: 0 1px 1px $iron-dark;
+        margin-bottom: 16px;
+        width: 380px;
+    }
+
+    &__photo {
+        float: left;
+        padding: 16px 19px;
+
+        img {
+            margin-top: 3px;
+        }
+    }
+
+    &__info {
+        float: left;
+        margin-top: 23px;
+        text-align: left;
+
+        p {
+            color: $curious-blue;
+            font-size: .7rem;
+            letter-spacing: .6px;
+            line-height: 1.2;
+            margin-top: 0;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            color: $wood-smoke;
+            font-size: 1rem;
+            letter-spacing: .2px;
+            line-height: 1.2;
+            margin-bottom: 0;
+        }
+    }
+
+    &__member--invisible {
+        height: 0;
+    }
+}
+
+// Responsive layout
+@media (max-width: 1180px) {
+    .bridge-team {
+        justify-content: space-evenly;
+    }
+}
+@media (max-width: 800px) {
+    .bridge-team {
+        justify-content: space-around;
+
+        &__member {
+            max-width: 300px;
+        }
+    }
+}
+@media (max-width: 640px) {
+    .bridge-team {
+        &__member {
+            max-width: 380px;
+        }
+    }
+}
+@media (max-width: 440px) {
+    .bridge-team {
+        &__member {
+            max-width: 300px;
+        }
+    }
+}
