@@ -3,7 +3,6 @@ $project-marketing-color: #256299;
 $ui-color: #30a1d6;
 $web-color: #cd2b27;
 
-
 // bridge page layout
 .flex-wrap {
     flex-wrap: wrap;
@@ -30,7 +29,7 @@ $web-color: #cd2b27;
 
         &--ui {
             color: $ui-color;
-        }   
+        }
 
         &--web {
             color: $web-color;
@@ -64,8 +63,7 @@ $web-color: #cd2b27;
         &--web {
             background-color: $web-color;
         }
-        }
-        
+    }
 
     &__underline {
         height: 3px;
@@ -112,7 +110,7 @@ $web-color: #cd2b27;
         box-shadow: 0 1px 1px $iron-dark;
         margin-bottom: 16px;
         width: 380px;
-      }
+    }
 
     &__photo {
         float: left;
@@ -121,7 +119,7 @@ $web-color: #cd2b27;
         img {
             margin-top: 3px;
         }
-    } 
+    }
 
     &__info {
         float: left;
@@ -131,27 +129,24 @@ $web-color: #cd2b27;
         p {
             color: $curious-blue;
             font-size: .7rem;
-            font-weight: 400;
             letter-spacing: .6px;
             line-height: 1.2;
             margin-top: 0;
             text-transform: uppercase;
-        } 
+        }
 
         h2 {
             color: $wood-smoke;
             font-size: 1rem;
-            font-weight: 400;
             letter-spacing: .2px;
             line-height: 1.2;
             margin-bottom: 0;
-        } 
+        }
     }
 
     &__member--invisible {
         height: 0;
     }
-    
 }
 
 // Responsive layout
