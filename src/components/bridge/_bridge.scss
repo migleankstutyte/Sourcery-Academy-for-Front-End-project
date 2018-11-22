@@ -1,14 +1,11 @@
 // bridge page layout
-.bridge-content {
-    margin: auto;
-    max-width: 1180px;
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 // bridge page team row
 .bridge {
-    grid-column: 1/16;
     //bridge team name
-
     &__name {
         font-size: 1rem;
         font-weight: 400;
@@ -16,23 +13,23 @@
         padding-bottom: 9px;
         padding-top: 47px;
         text-transform: uppercase;
-    }
 
-    &__name--leadership {
-        color: $oxford-blue;
-    }
+        &--leadership {
+            color: $oxford-blue;
+        }
 
-    &__name--project,
-    &__name--marketing {
-        color: $st-tropaz;
-    }
+        &--project,
+        &--marketing {
+            color: $st-tropaz;
+        }
 
-    &__name--ui {
-        color: $curious-blue;
-    }
+        &--ui {
+            color: $curious-blue;
+        }   
 
-    &__name--web {
-        color: $persian-red;
+        &--web {
+            color: $persian-red;
+        }
     }
 }
 
@@ -132,7 +129,7 @@
     } 
 
     &__info h2 {
-        color: $woodsmoke;
+        color: $wood-smoke;
         font-size: 1rem;
         font-weight: 400;
         line-height: 1.2;

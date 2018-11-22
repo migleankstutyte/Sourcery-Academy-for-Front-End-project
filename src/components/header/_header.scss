@@ -7,8 +7,8 @@ $separator-color: $outer-space;
     justify-content: center;
     position: fixed;
     top: 0;
-    z-index: $z-header;
     width: 100%;
+    z-index: $z-header;
 }
 
 // page header container for logo, nav and profile purposes
