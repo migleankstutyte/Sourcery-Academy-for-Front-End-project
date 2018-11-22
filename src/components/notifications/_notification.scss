@@ -1,0 +1,60 @@
+.notification {
+    $_separator: $iron-light;
+    $_text-active: $scooter;
+    $_text: $rolling-stone;
+    $_text-time: #a9aeb0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px $_separator;
+    padding: 20px 0;
+
+    &--without-profile-picture {
+        padding: 25px 0;
+    }
+
+    &__main-info {
+        display: flex;
+        align-items: center;
+    }
+
+    &__secondary-info {
+        display: flex;
+    }
+
+    &-time {
+        color: $_text-time;
+        font-size: 0.875rem;
+        font-weight: $weight-regular;
+        font-family: $font-primary;
+        line-height: 1.48;
+        margin: 0;
+        margin-left: 10px;
+    }
+
+    &-icon {
+        flex-shrink: 0;
+        margin-right: 15px;
+        justify-self: center;
+    }
+
+    &-profile-picture {
+        margin-right: 19px;
+        flex-shrink: 0;
+        border-radius: 100%;
+    }
+
+    &-text {
+        color: #7b8487;
+        font-size: 1rem;
+        font-weight: $weight-regular;
+        font-family: $font-primary;
+        line-height: 1.25;
+        margin: 0;
+        
+        &--clickable {
+            color: $_text-active;
+            text-decoration: none;
+        }
+    }
+}
