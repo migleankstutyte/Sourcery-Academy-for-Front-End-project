@@ -84,14 +84,13 @@
 
     &__underline--web {
         background-color: $persian-red;
-        width: 237px;
+        width: 235px;
     }
 
     &__underline--marketing {
         background-color: $st-tropaz;
-        width: 197px;
+        width: 185px;
     }
-
 }
 
 // bridge-team (row) block, flex-box declaration
@@ -137,10 +136,8 @@
     } 
 
     &__member--invisible {
-        background-color: inherit !important;
-        box-shadow: none !important;
+        height: 0;
     }
-
 }
 
 // Responsive layout
