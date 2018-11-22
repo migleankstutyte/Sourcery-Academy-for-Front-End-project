@@ -54,19 +54,24 @@
 }
 
 .button-input {
-    background: 0 0;
+    background: $white;
     border: 0;
-    height: 23px;
-    position: absolute;
-    right: 5px;
-    top: 9px;
-    width: 34px;
     cursor: pointer;
-    transition: width 2s;
+    height: 32px;
+    position: absolute;
+    right: 1px;
+    top: 3px;
+    transition: width 2s, height 2s;
+    width: 37px;
+
     &:focus {
         outline: none;
-        svg{
-           width: 35px; 
+    }
+
+    &:hover {
+        svg {
+            height: 90%; 
+            width: 90%; 
         }
     }
 }

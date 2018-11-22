@@ -17,11 +17,16 @@
     }
 
     &--post-upload {
-        box-sizing: border-box;
+        border: 0; 
         font-size: .875rem;
         height: 36px;
+        max-width: 500px;
         padding-left: 11px;
-        width: 100%;
+        width: 88%;
+
+        &:focus {
+            outline: none;
+        }
     }
 }
 
