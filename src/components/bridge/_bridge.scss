@@ -98,23 +98,30 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 13px;
 
     & > div {
         background-color: $white;
         border-radius: 2px;
         box-shadow: 0 1px 1px $iron-dark;
-        margin-bottom: 20px;
+        margin-bottom: 16px;
         width: 380px;
       }
 
     &__photo {
         float: left;
-        padding: 17px 20px;
+        // padding: 17px 20px;
+        padding: 16px 19px;
+
+        img {
+            margin-top: 3px;
+        }
     } 
 
     &__info {
         float: left;
-        margin-top: 20px;
+        // margin-top: 20px;
+        margin-top: 23px;
         text-align: left;
     } 
 
@@ -122,6 +129,7 @@
         color: $curious-blue;
         font-size: .7rem;
         font-weight: 400;
+        letter-spacing: .6px;
         line-height: 1.2;
         margin-top: 0;
         text-transform: uppercase;
@@ -131,6 +139,7 @@
         color: $wood-smoke;
         font-size: 1rem;
         font-weight: 400;
+        letter-spacing: .2px;
         line-height: 1.2;
         margin-bottom: 0;
     } 
