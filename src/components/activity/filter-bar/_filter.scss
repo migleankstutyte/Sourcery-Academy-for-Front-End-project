@@ -1,0 +1,37 @@
+$_color-text: $rolling-stone;
+$_color-text-active: $wood-smoke;
+$_color-border-active: $curious-blue;
+$_color-box-shadow: $iron-light;
+
+.activity-filter {
+    background-color: $white;
+    height: 48px;
+    box-shadow: 0 1px 0 $_color-box-shadow;
+    font-size: .875rem;
+    text-align: center;
+}
+
+.activity-filter__list {
+    @include reset-list-style;
+    display: flex;
+
+    &-item {
+        margin-right: 23px;
+        padding: 18px 10px 7px 10px;
+        cursor: pointer;
+
+        &--active, &:hover {
+            border-bottom: 2px solid $_color-border-active;
+            border-radius: 1px;
+        }
+    }
+
+    &-text {
+        color: $_color-text;
+        text-decoration: none;
+
+        &--active {
+            color: $_color-text-active;
+        }
+    }
+}

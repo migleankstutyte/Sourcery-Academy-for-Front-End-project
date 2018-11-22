@@ -5,13 +5,12 @@
 
     &__heading {
         color: $wood-smoke;
-        font-family: $font-primary;
         font-size: 1.063rem;
         font-weight: $weight-bold;
         line-height: 1.2;
         margin-top: 0;
     }
-    
+
     &__text {
         color: $rolling-stone;
         font-size: .9375rem;
@@ -22,7 +21,7 @@
 
     &__img {
         height: 180px;
-        
+
         img {
             max-width: none;
         }

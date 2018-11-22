@@ -1,5 +1,8 @@
 @charset 'utf-8';
 
+// Fonts
+@import url('https://use.typekit.net/chf3btc.css');
+
 @import 'base/config';
 // Framework configuration or other settings
 // Frameworks
@@ -9,6 +12,7 @@
 'base/colors', // Only color variables.
 'base/layout', // Only main layout classes
 'base/variables', // All other variables, including typography, measurements and etc.
+'base/z-indexes', // Z-indexes
 'mixins/mixins', // Mixins, functions, extenders.
 'vendor/normalize', // Contains CSS output to fix cross-browser inconsistencies.
 'base/svg-sprite';
@@ -30,11 +34,14 @@
 // Components
 @import 'components/helpers',
 '../components/header/header',
+'../components/bridge/bridge',
+'../components/company/company',
 '../components/activity/activity-card-post/activity-card-post',
 '../components/activity/activity-card-post/activity-card-header/activity-card-header',
 '../components/activity/activity-card-post/activity-card-content/activity-card-content',
 '../components/activity/activity-card-post/activity-card-comments/activity-card-comments',
 '../components/activity/activity-card-upload/activity_card_upload',
+'../components/activity/filter-bar/filter',
 '../components/footer/footer';
 
 // Print stylesheet
@@ -43,20 +50,26 @@
 // Fonts
 @import url('https://use.typekit.net/chf3btc.css');
 
-// grid declaration
-.grid {
-    display: $grid;
-    grid-template-columns: $grid-template-columns;
-    width: $max-width;
-    column-gap: $grid-column-gap;
+
+// flex-box declaration
+.flex {
+    display: flex;
+    justify-content: space-between;
     margin: auto;
+    max-width: 1180px;
+    width: 100%;
+
+    &__side-bar {
+        width: 20%;
+    }
+
+    &__side-bar-content {
+        width: 78%;
+    }
 }
-.side-bar {
-    grid-column: 1/4; 
-}
-.side-bar-content {
-    grid-column: 4/16;
-} 
-main {
+
+.page-container {
+    background-color: $porcelain; 
     margin-top: 56px; // that content would be seen below header, not on it
+    padding: 0 20px;
 }
