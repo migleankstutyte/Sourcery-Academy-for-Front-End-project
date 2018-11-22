@@ -1,6 +1,6 @@
 .post-header {
-    height: 90px;
     border-radius: 2px;
+    height: 90px;
 
     &__person {
         display: inline-block;
@@ -8,7 +8,7 @@
 
     &__person-img {
         display: inline-block;
-        padding: 20px;
+        padding: 20px 12px 20px 20px;
     }
 
     &__person-item {
@@ -20,40 +20,34 @@
     &__person-item-name {
         color: $black;
         font-size: 1rem;
-        font-family: $mainFont;
+        font-weight: $weight-bold;
         line-height: .5;
-        font-weight: 700
     }
 
     &__person-item-date {
-        color: #a9aeb0;
+        color: $gray-chateau;
         font-size: .75rem;
         line-height: .5;
         text-transform: uppercase;
-        font-family: $mainFont;
-        font-weight: 700;
     }
 
     .post-logo {
+        align-items: center;
+        background-color: $scooter;
+        border-radius: 2px 0 0 2px;
         display: flex;
         float: right;
-        width: 61px;
         height: 30px;
-        border-radius: 2px 0 0 2px;
-        background-color: $mainBlue;
-        align-items: center;
         justify-content: center;
         position: relative;
         top: 30px;
+        width: 61px;
 
         &__text {
-            color: $MoreWhite;
+            color: $white;
             font-size: .75rem;
-            font-weight: 400;
             line-height: 16.1px;
             text-transform: uppercase;
-            font-family: $mainFont;
-            font-weight: 700;
         }
     }
 }
