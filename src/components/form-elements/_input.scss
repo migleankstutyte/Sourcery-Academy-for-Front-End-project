@@ -20,7 +20,6 @@
         border: 0; 
         font-size: .875rem;
         height: 36px;
-        max-width: 500px;
         padding-left: 11px;
         width: 88%;
 
@@ -28,7 +27,7 @@
             outline: none;
         }
     }
-    
+
     &--file-upload {
         opacity: 0;
         position: absolute;
