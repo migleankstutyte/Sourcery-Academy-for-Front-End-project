@@ -28,7 +28,7 @@ $modal-background-opacity: $black-opacity;
     }
 
     h1 {
-        font-size: 1.8rem;;
+        font-size: 1.8rem;
         text-align: center;
     }
 
@@ -45,7 +45,7 @@ $modal-background-opacity: $black-opacity;
 .close {
     background: $close-button-color;
     border-radius: 12px;
-    box-shadow: 1px 1px 3px $black;
+    box-shadow: 1px 1px 3px .05 $black;
     color: $white;
     font-weight: $weight-bold;
     line-height: 25px;
