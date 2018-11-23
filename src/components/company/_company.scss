@@ -10,8 +10,8 @@
     &__item-seperator {
         background-color: $iron-light;
         height: 1px;
-        width: 220px;
         margin: 0;
+        max-width: 220px;
     }    
 
     &__item-link {

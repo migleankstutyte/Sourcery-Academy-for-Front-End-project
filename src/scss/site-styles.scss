@@ -65,12 +65,13 @@
 
     &__side-bar-content {
         background-color: $white;
-        margin-left: 260px;
+        margin-left: 240px;
         width: 100%;
         
         &--company
         {
-            
+          padding-left: 20px;
+
         }
     }
 }
