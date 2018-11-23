@@ -1,0 +1,22 @@
+.ads {
+    &__headline {
+        background-color: $athens-gray;
+        border: 1px solid $iron-light;
+        border-radius: 2px 2px 0 0;
+        box-shadow: 0 1px 1px .05 $black;
+        display: flex;
+        height: 40px;
+        justify-content: space-between;
+        padding: 0 107px 0 21px;
+
+        &-title,
+        &-date {
+            color: $rolling-stone;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__row {
+    }
+}

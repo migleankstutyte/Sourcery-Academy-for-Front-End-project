@@ -36,6 +36,7 @@
 '../components/header/header',
 '../components/bridge/bridge',
 '../components/company/company',
+'../components/company/company-ads',
 '../components/activity/activity-card-post/activity-card-post',
 '../components/activity/activity-card-post/activity-card-header/activity-card-header',
 '../components/activity/activity-card-post/activity-card-content/activity-card-content',
@@ -65,6 +66,7 @@
     &__side-bar-content {
         background-color: $white;
         margin-left: 260px;
+        width: 100%;
     }
 }
 
