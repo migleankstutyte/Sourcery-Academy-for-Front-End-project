@@ -1,0 +1,62 @@
+$close-button-color: $rolling-stone;
+$close-button-color-hover: $curious-blue;
+$modal-background-opacity: $black-opacity;
+
+.modal {
+    background: $modal-background-opacity;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: opacity 400ms ease-in;
+
+    &:target {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    & > div {
+        background: $white;
+        border-radius: 10px;
+        margin: 10% auto;
+        padding: 5px 20px 13px;
+        position: relative;
+        width: 400px;
+    }
+
+    h1 {
+        font-size: 1.8rem;;
+        text-align: center;
+    }
+
+    &__row {
+        padding-bottom: 20px;
+
+        &-input,
+        &-select {
+            width: 400px;
+        }
+    }
+}
+
+.close {
+    background: $close-button-color;
+    border-radius: 12px;
+    box-shadow: 1px 1px 3px $black;
+    color: $white;
+    font-weight: $weight-bold;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    text-decoration: none;
+    top: -10px;
+    width: 24px;
+
+    &:hover { 
+        background: $close-button-color-hover; 
+    }
+}
