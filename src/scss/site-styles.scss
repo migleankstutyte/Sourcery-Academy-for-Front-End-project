@@ -36,6 +36,7 @@
 '../components/header/header',
 '../components/bridge/bridge',
 '../components/company/company',
+'../components/company/company-events',
 '../components/activity/activity-card-post/activity-card-post',
 '../components/activity/activity-card-post/activity-card-header/activity-card-header',
 '../components/activity/activity-card-post/activity-card-content/activity-card-content',
@@ -58,12 +59,18 @@
     max-width: 1180px;
     width: 100%;
 
-    &__side-bar {
-        width: 20%;
+    &__side-bar--fixed {
+        position: fixed;
     }
 
     &__side-bar-content {
-        width: 78%;
+        background-color: $white;
+        margin-left: 240px;
+        width: 100%;
+
+        &--company {
+            padding: 20px;
+        }
     }
 }
 
