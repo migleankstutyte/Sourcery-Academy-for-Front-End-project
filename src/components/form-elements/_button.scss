@@ -1,6 +1,3 @@
-$company-ads-button-color: $curious-blue;
-$company-ads-button-color-hover: $rolling-stone;
-
 .button {
     &--primary {}
 
@@ -56,25 +53,3 @@ $company-ads-button-color-hover: $rolling-stone;
     }
 }
 
-// Company->Company ads page button
-.create-btn {
-    text-align: right;
-
-    &__button {
-        background-color: $company-ads-button-color;
-        border: 0;
-        border-radius: 2px;
-
-        &:hover {
-            background-color: $company-ads-button-color-hover;
-        }
-        &-text {
-            color: $white;
-            font-size: .8125rem;
-            letter-spacing: .5px;
-            line-height: 28px;
-            margin:  4px;
-            text-decoration: none;
-        }
-    }
-}

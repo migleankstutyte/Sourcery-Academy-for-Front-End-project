@@ -1,8 +1,36 @@
-$close-button-color: $rolling-stone;
-$close-button-color-hover: $curious-blue;
-$modal-background-opacity: $black-opacity;
+.create-btn {
+
+    $close-button-color: $rolling-stone;
+    $close-button-color-hover: $curious-blue;
+
+    float: right;
+    
+    &__button {
+        background-color: $company-ads-button-color;
+        border: 0;
+        border-radius: 2px;
+        text-align: center;
+        width: 112px;
+
+        &:hover {
+            background-color: $company-ads-button-color-hover;
+        }
+
+        &-text {
+            color: $white;
+            font-size: .8125rem;
+            letter-spacing: .5px;
+            line-height: 28px;
+            margin:  4px;
+            text-decoration: none;
+        }
+    }
+}
 
 .modal {
+
+    $modal-background-opacity: $black-opacity;
+
     background: $modal-background-opacity;
     bottom: 0;
     left: 0;
@@ -47,6 +75,10 @@ $modal-background-opacity: $black-opacity;
 }
 
 .close {
+
+    $close-button-color: $rolling-stone;
+    $close-button-color-hover: $curious-blue;
+    
     background: $close-button-color;
     border-radius: 12px;
     box-shadow: 1px 1px 3px .05 $black;
