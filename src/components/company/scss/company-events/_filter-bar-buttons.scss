@@ -2,6 +2,9 @@
     $button-text-color: $rolling-stone-light;
     $button-box-shadow: $mystic;
     $button-border-color: $mischka;
+    $active-button-background-color: $alice-blue;
+    $active-button-border-color: $curious-blue;
+    $active-button-text-color: $curious-blue;
 
     background-color: $white;
     border: 1px solid $button-border-color;
@@ -14,6 +17,20 @@
         color: $button-text-color;
         font-size: 13px;
         margin: 0;
-        padding: 0 7px;
+        padding: 0 6px;
+
+        .fa-times {
+            padding-left: 7px;
+        }
+
+    }
+
+    &--active {
+        background-color:  $active-button-background-color;
+        border: 1px solid $active-button-border-color;
+
+        p {
+            color: $curious-blue;
+        }
     }
 }
