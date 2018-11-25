@@ -1,0 +1,19 @@
+.filter-bar-button {
+    $button-text-color: $rolling-stone-light;
+    $button-box-shadow: $mystic;
+    $button-border-color: $mischka;
+
+    background-color: $white;
+    border: 1px solid $button-border-color;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px $button-box-shadow;
+    height: 30px;
+    margin-right: 5px;
+
+    &__main {
+        color: $button-text-color;
+        font-size: 13px;
+        margin: 0;
+        padding: 0 7px;
+    }
+}
