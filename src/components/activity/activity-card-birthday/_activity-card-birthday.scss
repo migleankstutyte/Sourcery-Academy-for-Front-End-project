@@ -1,0 +1,61 @@
+.birthday-post {
+    $_background-color: #ce363d;
+    $_text-color: $white;
+
+    border-radius: 2px;
+    height: 90px;
+    background-color: $_background-color;
+
+    &__person {
+        display: inline-block;
+    }
+
+    &__person-img {
+        display: inline-block;
+        padding: 20px 12px 20px 20px;
+        border-radius: 50%;
+    }
+    &__profile-picture {
+        border-radius: 50%;
+    }
+
+    &__person-item {
+        display: inline-block;
+        position: relative;
+        top: -8px;
+    }
+
+    &__person-item-name {
+        color: $_text-color;
+        font-size: 1rem;
+        font-weight: $weight-regular;
+        line-height: .5;
+    }
+
+    &__person-item-date {
+        color: $_text-color;
+        font-size: .75rem;
+        line-height: .5;
+        text-transform: uppercase;
+    }
+
+    .post-logo {
+        align-items: center;
+        background-color: $scooter;
+        border-radius: 2px 0 0 2px;
+        display: flex;
+        float: right;
+        height: 30px;
+        justify-content: center;
+        position: relative;
+        top: 30px;
+        width: 61px;
+
+        &__text {
+            color: $white;
+            font-size: .75rem;
+            line-height: 16.1px;
+            text-transform: uppercase;
+        }
+    }
+}
