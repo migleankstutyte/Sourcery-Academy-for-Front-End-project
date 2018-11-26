@@ -1,0 +1,12 @@
+.upload-wrapper {
+    background-color: $white;
+    border: 1px solid $iron-light;
+    padding: 25px 20px;
+
+    &__input {
+        border: 1px solid $mischka;
+        border-radius: 2px;
+        box-shadow: inset 0 2px 0 $porcelain;
+        position: relative;
+    }
+}

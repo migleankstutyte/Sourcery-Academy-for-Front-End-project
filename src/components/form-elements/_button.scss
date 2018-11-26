@@ -52,3 +52,25 @@
         }
     }
 }
+
+.button-input {
+    background: $white;
+    border: 0;
+    height: 32px;
+    position: absolute;
+    right: 1px;
+    top: 6px;
+    transition: width 2s, height 2s;
+    width: 37px;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        img {
+            height: 90%; 
+            width: 90%; 
+        }
+    }
+}
