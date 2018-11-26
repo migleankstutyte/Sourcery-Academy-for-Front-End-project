@@ -11,6 +11,8 @@ module.exports = function () {
             'prepare-assets',
             'prepare-config',
             'clear-image-cache',
+            'scripts',
+            'scripts-watch',
             'watch-scss',
             'watch-htmlrender',
             'watch-svg',
