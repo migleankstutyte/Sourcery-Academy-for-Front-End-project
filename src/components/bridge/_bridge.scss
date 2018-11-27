@@ -104,7 +104,7 @@ $web-color: #cd2b27;
     justify-content: space-between;
     margin-bottom: 13px;
 
-    & > div {
+    &__member {
         background-color: $white;
         border-radius: 2px;
         box-shadow: 0 1px 1px $iron-dark;
@@ -150,9 +150,30 @@ $web-color: #cd2b27;
 }
 
 // Responsive layout
+@media (max-width: 1200px) {
+    .bridge-team {
+        &__member {
+            max-width: 350px;
+        }
+    }
+}
+@media (max-width: 1120px) {
+    .bridge-team {
+        &__member {
+            max-width: 280px;
+        }
+    }
+}
 @media (max-width: 1180px) {
     .bridge-team {
         justify-content: space-evenly;
+    }
+}
+@media (max-width: 900px) {
+    .bridge-team {
+        &__member {
+            max-width: 350px;
+        }
     }
 }
 @media (max-width: 800px) {
@@ -160,14 +181,21 @@ $web-color: #cd2b27;
         justify-content: space-around;
 
         &__member {
-            max-width: 300px;
+            max-width: 280px;
         }
     }
 }
-@media (max-width: 640px) {
+// @media (max-width: 660px) {
+//     .bridge-team {
+//         &__member {
+//             max-width: 280px;
+//         }
+//     }
+// }
+@media (max-width: 620px) {
     .bridge-team {
         &__member {
-            max-width: 380px;
+            max-width: 350px;
         }
     }
 }
