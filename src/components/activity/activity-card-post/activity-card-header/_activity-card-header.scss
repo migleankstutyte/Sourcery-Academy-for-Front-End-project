@@ -1,52 +1,60 @@
 .post-header {
     border-radius: 2px;
     height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     &__person {
-        display: inline-block;
+        display: flex;
+        align-items: center;
     }
 
     &__person-img {
-        display: inline-block;
-        padding: 20px 12px 20px 20px;
+        margin: 20px;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+
+        img{
+            margin: 0 auto;
+            height: 100%;
+            width: auto;
+        }
     }
 
     &__person-item {
-        display: inline-block;
         position: relative;
-        top: -8px;
     }
 
     &__person-item-name {
         color: $black;
         font-size: 1rem;
         font-weight: $weight-bold;
-        line-height: .5;
+        margin: 0;
     }
 
     &__person-item-date {
         color: $gray-chateau;
         font-size: .75rem;
-        line-height: .5;
+        margin: 0;
         text-transform: uppercase;
     }
 
     .post-logo {
-        align-items: center;
         background-color: $scooter;
         border-radius: 2px 0 0 2px;
-        display: flex;
-        float: right;
         height: 30px;
         justify-content: center;
-        position: relative;
-        top: 30px;
+        display: flex;
         width: 61px;
+        align-items: center;
 
         &__text {
             color: $white;
             font-size: .75rem;
-            line-height: 16.1px;
             text-transform: uppercase;
         }
     }
