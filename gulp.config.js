@@ -104,6 +104,10 @@ module.exports = function () {
                     }
                 }
             }
+        },
+        scripts: {
+            src: [`${app}/**/*.js`],
+            dist: `${distFolder}/content/scripts/`
         }
     };
 
