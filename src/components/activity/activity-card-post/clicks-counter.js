@@ -7,7 +7,6 @@ buttonsArray.forEach(function(elem) {
             var count = Number(event.target.children[1].textContent) ;
             count += 1; 
             event.target.children[1].innerHTML = count;
-            
         }
     });
 });

@@ -15,9 +15,9 @@
     &__icon {
         color: $scooter;
         font-size: 1.125rem;
+        pointer-events: none;
         position: relative;
         top: 2px;
-        pointer-events: none;
     }
 
     &__number {
@@ -34,8 +34,8 @@
         display: inline-block;
         font-size: .8125rem;
         font-weight: 400;
-        text-transform: uppercase;
         pointer-events: none;
+        text-transform: uppercase;
     }
 
     &--blue-font {

@@ -8,19 +8,7 @@
     }
 
     &__input-img {
-        margin: 16px;
-        width: 36px;
-        height: 36px;
-        position: relative;
-        overflow: hidden;
-        border-radius: 50%;
-        min-width: 36px;
-
-        img{
-            margin: 0 auto;
-            height: 100%;
-            width: auto;
-        }
+        @include card-img-rounder (36px, 36px);
     }
 
     &__items {
@@ -31,19 +19,7 @@
     }
 
     &__items-img {
-        margin: 16px;
-        width: 36px;
-        height: 36px;
-        position: relative;
-        overflow: hidden;
-        border-radius: 50%;
-        min-width: 36px;
-
-        img{
-            margin: 0 auto;
-            height: 100%;
-            width: auto;
-        }
+        @include card-img-rounder (36px, 36px);
     }
 
     &__comment-article {
