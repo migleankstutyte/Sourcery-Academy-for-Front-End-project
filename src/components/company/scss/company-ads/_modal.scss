@@ -31,9 +31,7 @@
 
 .modal {
 
-    $modal-background-opacity: $black-opacity;
-
-    background: $modal-background-opacity;
+    background: black(.5); // from _functions.scss
     bottom: 0;
     left: 0;
     opacity: 0;
