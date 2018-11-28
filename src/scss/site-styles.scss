@@ -76,6 +76,22 @@
     }
 }
 
+
+
+// responsive layout
+@media (max-width: 775px) {
+    .flex {
+    
+        &__side-bar--fixed {
+            display: none;
+        }
+
+        &__side-bar-content {
+            margin-left: 0;
+        }
+    }
+}
+
 .page-container {
     background-color: $porcelain; 
     margin-top: 56px; // that content would be seen below header, not on it
