@@ -1,0 +1,49 @@
+.ads {
+    margin-top: 43px;
+
+    &__headline {
+        background-color: $athens-gray;
+        border: 1px solid $iron-light;
+        border-radius: 2px 2px 0 0;
+        box-shadow: 0 1px 1px .05 $black;
+        display: flex;
+        justify-content: space-between;
+        min-height: 40px;
+        padding-left: 21px;
+
+        &-title,
+        &-date {
+            align-self: center;
+            color: $rolling-stone;
+            font-size: .75rem;
+            text-transform: uppercase;
+        }
+
+        &-date {
+            min-width: 135px;
+        }
+    }
+
+    &__row {
+        border: 1px solid $iron-light;
+        border-radius: 2px 2px 0 0;
+        display: flex;
+        justify-content: space-between;
+        min-height: 63px;
+        padding-left: 20px;
+
+        &-title,
+        &-date {
+            align-self: center;
+            color: $wood-smoke;
+            font-size: .875rem;
+        }
+
+        &-date {
+            color: $rolling-stone;
+            font-size: .8125rem;
+            min-width: 135px;
+            text-transform: uppercase;
+        }
+    }
+}
