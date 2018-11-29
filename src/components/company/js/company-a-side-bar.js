@@ -47,9 +47,11 @@ const arr = [
     }
 ];
 
+// Show side bar in desktop menu
 function renderSideBarElements() {
     let resultHtml = ""; // create empty variable
-    for (let i = 0; i < arr.length; i++) { // loop through array
+    // loop through array
+    for (let i = 0; i < arr.length; i++) {
         resultHtml += `
         <li class="nav-list_item" ${arr[i].id}"> 
             <a href="#" class="nav-list__item-link">${arr[i].title}
@@ -66,6 +68,28 @@ function renderSideBarElements() {
 }
 
 renderSideBarElements(); // call function
+
+// // Show side bar in mobile menu
+// function renderSideBarElementsMobile() {
+//     let resultHtml = ""; // create empty variable
+//     // loop through array
+//     for (let i = 0; i < arr.length; i++) {
+//         resultHtml += `
+//         <li class="list__item" ${arr[i].id}"> 
+//             <a href="#">${arr[i].title}
+//             ${
+//                 arr[i].hasPicture // If array has picture (arrow in side-bar) - show img
+//                     ? `<span>
+//                   <img src="../images/company_icons/Arrow.png" alt="Arrow"/>
+//               </span></a>`
+//                     : ""
+//             }
+//         </li>`;
+//     }
+//     document.querySelector(".list").innerHTML = resultHtml; //show results
+// }
+
+// renderSideBarElementsMobile(); // call function
 
 // Toggle Company side bar
 function toggleSidebar(ref) {
