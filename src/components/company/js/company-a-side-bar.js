@@ -33,7 +33,8 @@ const arr = [
     {
         title: "Company Ads",
         id: 'id="js-company-ads"',
-        hasPicture: false
+        hasPicture: false,
+        href: "/html/company-ads.html"
     },
     {
         title: "Client Account",
@@ -69,27 +70,27 @@ function renderSideBarElements() {
 
 renderSideBarElements(); // call function
 
-// // Show side bar in mobile menu
-// function renderSideBarElementsMobile() {
-//     let resultHtml = ""; // create empty variable
-//     // loop through array
-//     for (let i = 0; i < arr.length; i++) {
-//         resultHtml += `
-//         <li class="list__item" ${arr[i].id}"> 
-//             <a href="#">${arr[i].title}
-//             ${
-//                 arr[i].hasPicture // If array has picture (arrow in side-bar) - show img
-//                     ? `<span>
-//                   <img src="../images/company_icons/Arrow.png" alt="Arrow"/>
-//               </span></a>`
-//                     : ""
-//             }
-//         </li>`;
-//     }
-//     document.querySelector(".list").innerHTML = resultHtml; //show results
-// }
+// Show side bar in mobile menu
+function renderSideBarElementsMobile() {
+    let resultHtml = ""; // create empty variable
+    // loop through array
+    for (let i = 0; i < arr.length; i++) {
+        resultHtml += `
+        <li class="list__item" ${arr[i].id}"> 
+            <a href="${arr[i].href}">${arr[i].title}
+            ${
+                arr[i].hasPicture // If array has picture (arrow in side-bar) - show img
+                    ? `<span>
+                  <img src="../images/company_icons/Arrow.png" alt="Arrow"/>
+              </span></a>`
+                    : ""
+            }
+        </li>`;
+    }
+    document.querySelector(".list").innerHTML = resultHtml; //show results
+}
 
-// renderSideBarElementsMobile(); // call function
+renderSideBarElementsMobile(); // call function
 
 // Toggle Company side bar
 function toggleSidebar(ref) {
