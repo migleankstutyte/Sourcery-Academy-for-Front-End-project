@@ -1,5 +1,5 @@
 // show side-bar elements
-var arr = [
+const arr = [
     {
         title: "Projects",
         id: 'id="js-project"',
