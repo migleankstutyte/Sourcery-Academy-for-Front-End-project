@@ -41,7 +41,12 @@
     width: 200px;
 
     .toggle-btn {
+        $button-color: $white;
+
+        background-color: $button-color;
+        border: 0;
         left: 220px;
+        outline: none;
         position: absolute;
         top: 10px;
 
