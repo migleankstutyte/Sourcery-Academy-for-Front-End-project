@@ -48,13 +48,13 @@ const arr = [
 ];
 
 function renderSideBarElements() {
-    let resultHtml = "";
-    for (let i = 0; i < arr.length; i++) {
+    let resultHtml = ""; // create empty variable
+    for (let i = 0; i < arr.length; i++) { // loop through array
         resultHtml += `
-        <li class="nav-list_item" ${arr[i].id}">
+        <li class="nav-list_item" ${arr[i].id}"> 
             <a href="#" class="nav-list__item-link">${arr[i].title}
             ${
-                arr[i].hasPicture
+                arr[i].hasPicture // If array has picture (arrow in side-bar) - show img
                     ? `<span>
                   <img src="../images/company_icons/Arrow.png" alt="Arrow"/>
               </span></a>`
@@ -62,10 +62,10 @@ function renderSideBarElements() {
             }
         </li>`;
     }
-    document.querySelector(".nav-list").innerHTML = resultHtml;
+    document.querySelector(".nav-list").innerHTML = resultHtml; //show results
 }
 
-renderSideBarElements();
+renderSideBarElements(); // call function
 
 // Toggle Company side bar
 function toggleSidebar(ref) {
