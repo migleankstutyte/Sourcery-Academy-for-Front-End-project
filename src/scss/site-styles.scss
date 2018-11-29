@@ -59,12 +59,32 @@
     max-width: 1180px;
     width: 100%;
 
-    &__side-bar {
-        width: 20%;
+    &__side-bar--fixed {
+        position: fixed;
     }
 
     &__side-bar-content {
-        width: 78%;
+        background-color: $white;
+        margin-left: 240px;
+        width: 100%;
+
+        &--company {
+            padding: 20px;
+        }
+    }
+}
+
+// responsive layout
+@media (max-width: 775px) {
+    .flex {
+
+        &__side-bar-content {
+            margin-left: 0;
+
+            &--company {
+                padding-top: 50px;
+            }
+        }
     }
 }
 
