@@ -12,9 +12,10 @@
     a {
         text-decoration: none;
         text-transform: uppercase;
+
+        .fa-angle-left {
+            color: $button-icon-color;
+        }
     }
 
-    .fa-angle-left {
-        color: $button-icon-color;
-    }
 }
