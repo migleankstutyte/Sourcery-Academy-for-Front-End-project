@@ -57,3 +57,9 @@
         margin-top: 25px;
     }    
 }
+// Responsive layout
+@media (max-width: 470px) {
+    .ads__row-title {
+        max-width: 160px;
+    }    
+}
