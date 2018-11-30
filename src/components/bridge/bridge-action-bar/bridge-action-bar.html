@@ -1,19 +1,31 @@
-<header class= "bridge-filter">
-        <div class="flex">
-            <ul class= "bridge-filter__list">
-                <li class= "bridge-filter__list-item bridge-filter__list-item--active">
-                    <a class= "bridge-filter__list-text bridge-filter__list-text--active" href="../index.html">All</a>
-                </li>
-                <li class= "bridge-filter__list-item">
-                    <a class= "bridge-filter__list-text" href="#nolink">Kaunas</a>
-                </li>
-                <li class= "bridge-filter__list-item">
-                    <a class= "bridge-filter__list-text" href="#nolink">Vilnius</a>
-                </li>
-                <li class= "bridge-filter__list-item">
-                    <a class= "bridge-filter__list-text" href="#nolink">Chicago</a>
-                </li>
-            </ul>
+<header class="bridge-filter">
+    <div class="flex">
+        <ul class="bridge-filter__list">
+            <li class="bridge-filter__list-item bridge-filter__list-item--active js-all-team">
+                <a class="bridge-filter__list-text bridge-filter__list-text--active">All</a>
+            </li>
+            <li class="bridge-filter__list-item js-kaunas-team">
+                <a class="bridge-filter__list-text" href="#nolink">Kaunas</a>
+            </li>
+            <li class="bridge-filter__list-item js-vilnius-team">
+                <a class="bridge-filter__list-text" href="#nolink">Vilnius</a>
+            </li>
+            <li class="bridge-filter__list-item js-chicago-team">
+                <a class="bridge-filter__list-text" href="#nolink">Chicago</a>
+            </li>
+        </ul>
+        <div class="bridge-filter__button-field">
+            <select class="bridge-filter__button" id="colorselector">
+                <option class="select-departament">Departaments</option>
+                <option class="select-leadership">Leadership Team</option>
+                <option class="select-project">Project and Product Leads</option>
+                <option class="select-designer">UI & UX Designers</option>
+                <option class="select-developer">Web and Mobile Developers</option>
+                <option class="select-marketing">Marketing Specialists</option>
+            </select>
         </div>
-    </header>
-    
+        <div class="bridge-filter__search-field">
+            <input type="text" >
+        </div>
+    </div>
+</header>
