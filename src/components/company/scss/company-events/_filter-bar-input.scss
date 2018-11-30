@@ -9,11 +9,12 @@
     box-shadow: inset 0 2px 0 $search-box-chadow-color;
     height: 30px;
     position: relative;
+    width: 240px;
 
     input {
         border: 0;
+        font-size: .875rem;
         padding: 3px 10px;
-        // width: 85%;
     }
 
     img {

@@ -42,24 +42,23 @@
         border: 1px solid $iron-light;
         border-radius: 2px 2px 0 0;
         display: flex;
-        min-height: 63px;
         justify-content: space-between;
-        // line-height: 4.9;
+        min-height: 63px;
         padding-left: 20px;
+
 
         &-title,
         &-recurring,
         &-date {
+            align-self: center;
             color: $wood-smoke;
             float: left;
             font-size: .875rem;
-            align-self: center;
         }
 
         &-date {
             color: $rolling-stone;
             font-size: .8125rem;
-            line-height: 65px;
             text-transform: uppercase;
             width: 27%;
         }
