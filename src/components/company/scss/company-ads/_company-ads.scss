@@ -25,6 +25,9 @@
     }
 
     &__row {
+        $row-background-color: $white;
+
+        background-color: $row-background-color;
         border: 1px solid $iron-light;
         border-radius: 2px 2px 0 0;
         display: flex;
@@ -46,4 +49,17 @@
             text-transform: uppercase;
         }
     }
+}
+
+// Responsive layout
+@media (max-width: 775px) {
+    .ads {
+        margin-top: 25px;
+    }    
+}
+// Responsive layout
+@media (max-width: 470px) {
+    .ads__row-title {
+        max-width: 160px;
+    }    
 }
