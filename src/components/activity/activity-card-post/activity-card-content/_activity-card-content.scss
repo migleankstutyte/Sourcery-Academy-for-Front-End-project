@@ -20,10 +20,11 @@
     }
 
     &__img {
-        height: 180px;
-
+        display: flex;
+        
         img {
-            max-width: none;
+            height: 100%;
+            width: 100%;
         }
     }
 
