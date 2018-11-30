@@ -5,6 +5,7 @@ $separator-color: $outer-space;
     background-color: $black;
     height: $header-height;    
     justify-content: center;
+    display: flex;
     position: fixed;
     top: 0;
     width: 100%;
@@ -15,42 +16,24 @@ $separator-color: $outer-space;
 .page-header {
     display: flex;
     justify-content: space-between;
-    margin: auto;
     width: 1180px;
+    overflow: hidden;
+    align-items: center;
 }
 
 //HEADER LOGO CLASSES
 .logo {
     align-self: center;
     display: flex;
+    margin: 15px 0;
+    flex-shrink: 0;
 }
 
-//HEADER NAVIGATION CLASSES
-.navigation-wrapper {
-    width: 35%;
+.logo-big{
+    display: block;
 }
-
-.navigation-list {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-}
-
-.navigation-list-item {
-    padding-right: 23px;
-}
-
-.header-navigation-text {
-    color: #7b8487;
-    font-family: proxima-nova, sans-serif;
-    font-size: .8em;
-    font-weight: 400;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.header-navigation-active {
-    color: $white;
+.logo-small{
+    display: none;
 }
 
 //HEADER ACTIONS CLASSES
@@ -58,14 +41,17 @@ $separator-color: $outer-space;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    height: 100%;
 }
 
 .header-actions-item {
     background-color: $black;
     border: 0;
     cursor: pointer;
-    height: 100%;
     padding: 0 15px;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
 }
 
 .profile-dropdown {
