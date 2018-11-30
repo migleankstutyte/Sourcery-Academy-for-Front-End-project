@@ -10,19 +10,19 @@
         border-radius: 2px 2px 0 0;
         box-shadow: 0 1px 1px .05 $black;
         display: flex;
-        min-height: 40px;
         justify-content: space-between;
-        // line-height: 4;
+        min-height: 40px;
         padding-left: 21px;
+        text-align: left;
 
         &-title,
         &-recurring,
         &-date {
+            align-self: center;
             color: $rolling-stone;
             float: left;
             font-size: .75rem;
             text-transform: uppercase;
-            align-self: center;
         }
 
         &-title {
