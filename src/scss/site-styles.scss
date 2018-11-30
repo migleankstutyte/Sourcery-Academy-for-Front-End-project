@@ -35,6 +35,7 @@
 @import 'components/helpers',
 '../components/header/header',
 '../components/bridge/bridge',
+'../components/company/back-button/back-button',
 '../components/company/scss/company',
 '../components/company/scss/company-ads/company-ads',
 '../components/company/scss/company-ads/modal',
@@ -76,18 +77,16 @@
     }
 }
 
-
-
 // responsive layout
 @media (max-width: 775px) {
     .flex {
-    
-        &__side-bar--fixed {
-            display: none;
-        }
 
         &__side-bar-content {
             margin-left: 0;
+
+            &--company {
+                padding-top: 50px;
+            }
         }
     }
 }

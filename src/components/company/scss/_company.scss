@@ -1,43 +1,110 @@
-.nav-container {
-    $seperator-color: $iron-light;
+.nav-list {
+    box-shadow: 1px 0 0 $iron-light;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0;
 
-    box-shadow: 1px 0 0 $seperator-color;
-    width: 240px;
+    &__item-seperator {
+        background-color: $iron-light;
+        height: 1px;
+        margin: 0;
+        max-width: 220px;
+    }
 
-    .nav-list {
-        font-size: .9rem;
-        list-style-type: none;
-        margin-top: 10px;
-        min-width: 120px;
-        padding: 0;
-        width: 220px;
+    &__item-link {
+        color: $wood-smoke;
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
 
-        &__item {
-            border-bottom: 1px solid $seperator-color;
-        }   
+        img {
+            margin-right: 32px;
+        }
 
-        &__item-link {
-            align-items: center;
-            color: $wood-smoke;
-            display: flex;
-            justify-content: space-between;
-            min-height: 40px;
-            text-decoration: none;
-
-            img {
-                padding-right: 13px;
-            }
-
-            &:hover {
-                font-weight: $weight-bold;
-            }
-
-            &:focus {
-                color: $curious-blue;
-                font-weight: 600;
-            }   
-        }    
+        &:focus {
+            color: $curious-blue;
+            font-weight: 600;
+        }
     }
 }
 
+// .nav-container-mobile {
+.nav-container-mobile {
+    height: 100%;
+    left: -200px;
+    position: absolute;
+    top: 0;
+    transition: 300ms linear;
+    width: 200px;
 
+    .toggle-btn {
+        $button-color: $white;
+
+        background-color: $button-color;
+        border: 0;
+        left: 220px;
+        outline: none;
+        position: absolute;
+        top: 10px;
+
+        span {
+            $hamburger-color: $wood-smoke;
+
+            background: $hamburger-color;
+            cursor: pointer;
+            display: block;
+            height: 5px;
+            margin: 5px 0;
+            width: 30px;
+        }
+    }
+
+    .list {
+        $mobile-navigation-background-color: $porcelain;
+        $mobile-navigation-text-color: $wood-smoke;
+        $mobile-navigation-border-color: $iron-light;
+
+        list-style: none;
+        margin-top: 0;
+        padding: 0;
+
+        &__item {
+            background-color: $mobile-navigation-background-color;
+            border-bottom: 1px solid $mobile-navigation-border-color;
+            font-size: $base-font-size;
+            padding: 15px 10px;
+            text-transform: uppercase;
+            width: 150px;
+
+            a {
+                color: $mobile-navigation-text-color;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.sidebar-active {
+    .nav-container-mobile {
+        left: 0;
+
+        .toggle-btn {
+            left: 185px;
+        }
+    }
+}
+
+// Responsive layout
+@media (min-width: 775px) {
+    .nav-container-mobile {
+        display: none;
+    }
+}
+@media (max-width: 775px) {
+    .nav-container {
+        display: none;
+    }
+}
