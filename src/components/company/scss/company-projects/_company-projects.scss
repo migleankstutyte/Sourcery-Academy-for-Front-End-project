@@ -18,22 +18,27 @@
         &-est {
             align-self: center;
             color: $rolling-stone;
-            float: left;
+            // float: left;
             font-size: .75rem;
+            font-weight: $weight-regular !important;
             text-transform: uppercase;
         }
 
         &-projects {
             flex-grow: 1;
+            text-align: left;
         }
 
-        &-progress,
+        &-progress {
+            min-width: 135px;
+        }
+
         &-act {
-            min-width: 123px;
+            min-width: 78px;
         }
 
         &-est {
-            min-width: 100px;
+            min-width: 165px;
         }
     }
 
@@ -45,21 +50,22 @@
         border-radius: 2px 2px 0 0;
         display: flex;
         justify-content: space-between;
-        min-height: 79px;
-        padding-left: 20px;
+        min-height: 78px;
+        padding-left: 17px;
 
         &-progress,
         &-act,
         &-est {
             align-self: center;
             color: $wood-smoke;
-            float: left;
+            // float: left;
             font-size: .875rem;
         }
 
         &-projects {
             align-self: center;
             flex-grow: 1;
+            text-align: left;
 
             .description {
                 $description-text-color: $wood-smoke;
@@ -164,7 +170,7 @@
 
         &-progress,
         &-act {
-            min-width: 123px;
+            min-width: 12px;
         }
 
         &-act {
