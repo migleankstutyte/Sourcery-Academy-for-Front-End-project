@@ -1,33 +1,34 @@
 .post-header {
+    align-items: center;
     border-radius: 2px;
+    display: flex;
     height: 90px;
+    justify-content: space-between;
 
     &__person {
-        display: inline-block;
+        align-items: center;
+        display: flex;
     }
 
     &__person-img {
-        display: inline-block;
-        padding: 20px 12px 20px 20px;
+        @include card-img-rounder(50px, 50px);
     }
 
     &__person-item {
-        display: inline-block;
         position: relative;
-        top: -8px;
     }
 
     &__person-item-name {
         color: $black;
         font-size: 1rem;
         font-weight: $weight-bold;
-        line-height: .5;
+        margin: 0;
     }
 
     &__person-item-date {
         color: $gray-chateau;
         font-size: .75rem;
-        line-height: .5;
+        margin: 0;
         text-transform: uppercase;
     }
 
@@ -36,17 +37,13 @@
         background-color: $scooter;
         border-radius: 2px 0 0 2px;
         display: flex;
-        float: right;
         height: 30px;
         justify-content: center;
-        position: relative;
-        top: 30px;
         width: 61px;
 
         &__text {
             color: $white;
             font-size: .75rem;
-            line-height: 16.1px;
             text-transform: uppercase;
         }
     }

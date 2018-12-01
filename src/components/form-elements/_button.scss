@@ -9,12 +9,15 @@
     background-color: $white;
     border: 0;
     box-shadow: inset 1px 0 0 $iron-light;
-    height: 50px;
+    cursor: pointer;
     width: 50%;
 
     &__icon {
         color: $scooter;
         font-size: 1.125rem;
+        pointer-events: none;
+        position: relative;
+        top: 2px;
     }
 
     &__number {
@@ -22,6 +25,7 @@
         font-size: .8125rem;
         font-weight: 700;
         margin: 0 3px 0 8px;
+        pointer-events: none;
 
     }
 
@@ -30,6 +34,7 @@
         display: inline-block;
         font-size: .8125rem;
         font-weight: 400;
+        pointer-events: none;
         text-transform: uppercase;
     }
 
