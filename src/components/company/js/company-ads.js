@@ -44,6 +44,9 @@ ads.addEventListener("click", function() {
             </div>
         </div>
         </div>
+
+        <button onclick="topFunction()" id="myBtn" class="to-top-button" title="Go to top" type="button" role="button" aria-label="Go to top"><i class="fas fa-angle-up fa-2x"></i></button>
+
         <div class="ads">
             <div class="ads__headline">
                 <div class="ads__headline-title">Title</div>
@@ -129,6 +132,8 @@ setTimeout(function() {
                 </div>
             </div>
         </div>
+
+        <button onclick="topFunction()" id="myBtn" class="to-top-button" title="Go to top" type="button" role="button" aria-label="Go to top"><i class="fas fa-angle-up fa-2x"></i></button>
 
         <table class="events" role="table" aria-label="Events">
             <tr class="events__headline" role="row">
