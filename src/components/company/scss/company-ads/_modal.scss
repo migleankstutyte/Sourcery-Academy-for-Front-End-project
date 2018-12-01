@@ -1,11 +1,8 @@
 .create-btn {
-
     $close-button-color: $rolling-stone;
     $close-button-color-hover: $curious-blue;
     $company-ads-button-color: $curious-blue;
     $company-ads-button-color-hover: $rolling-stone;
-
-    float: right;
 
     &__button {
         background-color: $company-ads-button-color;
@@ -20,18 +17,17 @@
 
         &-text {
             color: $white;
-            font-size: .8125rem;
-            letter-spacing: .5px;
+            font-size: 0.8125rem;
+            letter-spacing: 0.5px;
             line-height: 28px;
-            margin:  4px;
+            margin: 4px;
             text-decoration: none;
         }
     }
 }
 
 .modal {
-
-    background: black(.5); // from _functions.scss
+    background: black(0.5); // from _functions.scss
     bottom: 0;
     left: 0;
     opacity: 0;
@@ -78,13 +74,12 @@
 }
 
 .close {
-
     $close-button-color: $rolling-stone;
     $close-button-color-hover: $curious-blue;
-    
+
     background: $close-button-color;
     border-radius: 12px;
-    box-shadow: 1px 1px 3px .05 $black;
+    box-shadow: 1px 1px 3px 0.05 $black;
     color: $white;
     font-weight: $weight-bold;
     line-height: 25px;
@@ -95,13 +90,27 @@
     top: -10px;
     width: 24px;
 
-    &:hover { 
-        background: $close-button-color-hover; 
+    &:hover {
+        background: $close-button-color-hover;
     }
 }
 
-
 // Responsive layout
+@media (min-width: 775px) {
+    .create-btn {
+        float: right;
+    }
+}
+@media (max-width: 775px) {
+    .create-btn {
+        float: none;
+        // padding-top: 25px;
+
+        &__button {
+            margin: auto;
+        }
+    }
+}
 @media (max-width: 500px) {
     .modal__content {
         margin-top: 80px;
@@ -115,12 +124,12 @@
         &-select,
         &-input,
         &-textarea {
-            font-size: .8125rem;
+            font-size: 0.8125rem;
             width: 350px;
         }
 
         &-select option {
-           max-width: 50px;
+            max-width: 50px;
         }
     }
 }

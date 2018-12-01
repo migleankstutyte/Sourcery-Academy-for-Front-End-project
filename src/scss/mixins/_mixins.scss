@@ -140,6 +140,22 @@
     white-space: $white-space;
     word-wrap: normal;
 }
+//Automaticaly round inserted image
+@mixin card-img-rounder ($width, $height) {
+    border-radius: 50%;
+    height: $height;
+    margin: 16px;
+    min-width: $width;
+    overflow: hidden;
+    position: relative;
+    width: $width;
+
+    img {
+        height: 100%;
+        margin: 0 auto;
+        width: auto;
+    }
+}
 
 
 
