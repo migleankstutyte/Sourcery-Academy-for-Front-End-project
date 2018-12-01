@@ -54,7 +54,7 @@ function renderSideBarElements() {
     // loop through array
     for (let i = 0; i < arr.length; i++) {
         resultHtml += `
-        <li role="menuitem" class="nav-list_item" ${arr[i].id}"> 
+        <li role="menuitem" class="nav-list__item" ${arr[i].id}"> 
             <a href="#" class="nav-list__item-link">${arr[i].title}
             ${
                 arr[i].hasPicture // If array has picture (arrow in side-bar) - show img
