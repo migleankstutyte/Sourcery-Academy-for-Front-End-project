@@ -1,0 +1,28 @@
+.filter-bar {
+
+    &__left {
+        float: left;
+    }
+
+    &__right {
+        float: right;
+    }
+}
+
+// responsive layout
+
+@media (max-width: 775px) {
+    .filter-bar {
+
+        &__left {
+            float: none;
+            text-align: center;
+        }
+
+        &__right {
+            float: none;
+            padding-top: 10px;
+        }
+    }
+}
+
