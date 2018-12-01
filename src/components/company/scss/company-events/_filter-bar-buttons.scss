@@ -23,6 +23,14 @@
             padding-left: 7px;
         }
 
+        .fa-angle-down {
+            padding-left: 13px;
+        }
+
+        img {
+            padding-right: 8px;
+        }
+
     }
 
     &--active {
@@ -33,4 +41,17 @@
             color: $curious-blue;
         }
     }
+
+    &--small {
+        margin-right: 0;
+        padding: 0;
+
+        p {
+            padding: 0 3px 0 10px;
+        }
+    }
+}
+
+.no-space {
+    display: inline-block;
 }
