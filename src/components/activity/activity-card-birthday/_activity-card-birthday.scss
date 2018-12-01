@@ -1,61 +1,52 @@
 .birthday-post {
-    $_background-color: #ce363d;
-    $_text-color: $white;
+    $_background-color: $persian-red;
+    $_birthday-text-color: $white;
 
-    border-radius: 2px;
-    height: 90px;
+    align-items: center;
     background-color: $_background-color;
+    border-radius: 2px;
+    display: flex;
+    height: 90px;
+    justify-content: space-between;
 
     &__person {
-        display: inline-block;
+        align-items: center;
+        display: flex;
     }
 
     &__person-img {
-        display: inline-block;
-        padding: 20px 12px 20px 20px;
-        border-radius: 50%;
-    }
-    &__profile-picture {
-        border-radius: 50%;
+        @include card-img-rounder(50px, 50px);
     }
 
     &__person-item {
-        display: inline-block;
         position: relative;
-        top: -8px;
     }
 
     &__person-item-name {
-        color: $_text-color;
+        color: $_birthday-text-color;
         font-size: 1rem;
         font-weight: $weight-regular;
-        line-height: .5;
+        line-height: 1.3;
+        margin: 0;
     }
 
     &__person-item-date {
-        color: $_text-color;
+        color: $_birthday-text-color;
         font-size: .75rem;
-        line-height: .5;
+        line-height: 1.3;
+        margin: 0;
         text-transform: uppercase;
     }
 
     .post-logo {
         align-items: center;
-        background-color: $scooter;
-        border-radius: 2px 0 0 2px;
         display: flex;
-        float: right;
-        height: 30px;
         justify-content: center;
-        position: relative;
-        top: 30px;
-        width: 61px;
+        margin-right: 19px;
 
-        &__text {
-            color: $white;
-            font-size: .75rem;
-            line-height: 16.1px;
-            text-transform: uppercase;
+        &__icon {
+            display: flex;
+            flex-shrink: 0;
         }
     }
 }
