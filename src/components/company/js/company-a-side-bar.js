@@ -3,7 +3,8 @@ const arr = [
     {
         title: "Projects",
         id: 'id="js-project"',
-        hasPicture: ''
+        hasPicture: '',
+        href: "/html/company/company-projects.html"
     },
     {
         title: "Articles",
