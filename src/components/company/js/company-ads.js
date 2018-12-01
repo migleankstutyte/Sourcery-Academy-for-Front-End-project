@@ -2,9 +2,8 @@
 const content = document.getElementById("js-content");
 const ads = document.getElementById("js-company-ads");
 
-
 ads.addEventListener("click", function() {
-            document.getElementById("js-content").innerHTML = `
+    document.getElementById("js-content").innerHTML = `
         <div class="create-btn">
             <div class="create-btn__button">
                 <a href="#openModal" title="Create new ad" class="create-btn__button-text">Create New Ad</a>
@@ -106,6 +105,108 @@ ads.addEventListener("click", function() {
                 <div class="ads__row-title">Strategic Account Executive</div>
                 <div class="ads__row-date">04-17 14:30 AM</div>
             </div>
-        </div>`
+        </div>`;
 });
-    
+
+setTimeout(function() {
+    // show side-bar content, when side-bar element is clicked
+    const events = document.getElementById("js-events");
+    events.addEventListener("click", function() {
+        document.getElementById("js-content").innerHTML = `
+        <div class="filter-bar">
+            <div class="filter-bar__left">
+                <button class="filter-bar-button" role="button" aria-label="View All">
+                    <p class="filter-bar-button__main">View All</p>
+                </button>
+                <button class="filter-bar-button filter-bar-button--active" role="button" aria-label="Reccurence" aria-pressed="true">
+                    <p class="filter-bar-button__main">Reccurence<i class="fas fa-times"></i></p>
+                </button>
+            </div>
+            <div class="filter-bar__right">
+                <div class="search">
+                    <input type="search"title="Keywords for a site-wide search" aria-label="Keywords for a site-wide search" class="form-control input-append" placeholder="Search"/>
+                    <img role="img" src="/images/company_icons/Magnifying_ico.svg" alt="search"/>
+                </div>
+            </div>
+        </div>
+
+        <table class="events" role="table" aria-label="Events">
+            <tr class="events__headline" role="row">
+                <th class="events__headline-title" role="columnheader">Title</th>
+                <th class="events__headline-recurring" role="columnheader">Is recurring</th>
+                <th class="events__headline-date" role="columnheader">Start-end Date</th>
+            </tr>
+            <tr class="events__row" role="row">
+                <td class="events__row-title" role="cell">April birthdays!</td>
+                <td class="events__row-recurring" role="cell" role="cell">No</td>
+                <td class="events__row-date" role="cell" role="cell">05-05 11:00 AM - 05-06 11:30 AM</td>
+            </tr>
+            <tr class="events__row" role="row">
+                <td class="events__row-title" role="cell">Vilnius pizza party</td>
+                <td class="events__row-recurring" role="cell">No</td>
+                <td class="events__row-date" role="cell">05-05 11:00 AM - 05-06 11:30 AM</td>
+            </tr>
+            <tr class="events__row" role="row">
+                <td class="events__row-title" role="cell">Vilnius Geek Night 2</td>
+                <td class="events__row-recurring" role="cell">No</td>
+                <td class="events__row-date" role="cell">05-05 11:00 AM - 05-06 11:30 AM</td>
+            </tr>
+            <tr class="events__row" role="row">
+                <td class="events__row-title" role="cell">March Birthdays!</td>
+                <td class="events__row-recurring" role="cell">No</td>
+                <td class="events__row-date" role="cell">05-05 11:00 AM - 05-06 11:30 AM</td>
+            </tr>
+            <tr class="events__row" role="row">
+                <td class="events__row-title" role="cell">Hercules Trophy Baltics</td>
+                <td class="events__row-recurring" role="cell">No</td>
+                <td class="events__row-date" role="cell">05-05 11:00 AM - 05-06 11:30 AM</td>
+            </tr>
+            <tr class="events__row" role="row">
+                <td class="events__row-title" role="cell">Kaunas Half Marathon</td>
+                <td class="events__row-recurring" role="cell">No</td>
+                <td class="events__row-date" role="cell">05-05 11:00 AM - 05-06 11:30 AM</td>
+            </tr>
+            <tr class="events__row" role="row">
+                <td class="events__row-title" role="cell">Vilnius Challenge</td>
+                <td class="events__row-recurring" role="cell">No</td>
+                <td class="events__row-date" role="cell">05-05 11:00 AM - 05-06 11:30 AM</td>
+            </tr>
+            <tr class="events__row" role="row">
+                <td class="events__row-title" role="cell">Kaunas Marathon</td>
+                <td class="events__row-recurring" role="cell">No</td>
+                <td class="events__row-date" role="cell">05-05 11:00 AM - 05-06 11:30 AM</td>
+            </tr>
+            <tr class="events__row" role="row">
+                <td class="events__row-title" role="cell">Kaunas Marathon</td>
+                <td class="events__row-recurring" role="cell">No</td>
+                <td class="events__row-date" role="cell">05-05 11:00 AM - 05-06 11:30 AM</td>
+            </tr>
+            <tr class="events__row" role="row">
+                <td class="events__row-title" role="cell">ATDD for AngularJS projects</td>
+                <td class="events__row-recurring" role="cell">No</td>
+                <td class="events__row-date" role="cell">05-05 11:00 AM - 05-06 11:30 AM</td>
+            </tr>
+            <tr class="events__row" role="row">
+                <td class="events__row-title" role="cell">Chicago Spring Half Marathon</td>
+                <td class="events__row-recurring" role="cell">No</td>
+                <td class="events__row-date" role="cell">05-05 11:00 AM - 05-06 11:30 AM</td>
+            </tr>
+            <tr class="events__row" role="row">
+                <td class="events__row-title" role="cell">Devbridge @ Automate 2015</td>
+                <td class="events__row-recurring" role="cell">No</td>
+                <td class="events__row-date" role="cell">05-05 11:00 AM - 05-06 11:30 AM</td>
+            </tr>
+            <tr class="events__row" role="row">
+                <td class="events__row-title" role="cell">Devbridge @ SXSW</td>
+                <td class="events__row-recurring" role="cell">No</td>
+                <td class="events__row-date" role="cell">05-05 11:00 AM - 05-06 11:30 AM</td>
+            </tr>
+            <tr class="events__row" role="row">
+                <td class="events__row-title" role="cell">February Raging Bagel</td>
+                <td class="events__row-recurring" role="cell">No</td>
+                <td class="events__row-date" role="cell">05-05 11:00 AM - 05-06 11:30 AM</td>
+            </tr>
+        </table>
+        `;
+    });
+}, 10);

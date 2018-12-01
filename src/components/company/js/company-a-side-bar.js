@@ -28,13 +28,14 @@ const arr = [
     {
         title: "Events",
         id: 'id="js-events"',
-        hasPicture: ''
+        hasPicture: '',
+        href: "/html/company/company-events.html"
     },
     {
         title: "Company Ads",
         id: 'id="js-company-ads"',
         hasPicture: '',
-        href: "/html/company-ads.html"
+        href: "/html/company/company-ads.html"
     },
     {
         title: "Client Account",
