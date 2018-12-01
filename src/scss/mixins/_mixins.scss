@@ -144,7 +144,7 @@
 @mixin card-img-rounder ($width, $height) {
     border-radius: 50%;
     height: $height;
-    margin: 16px;
+    margin: 20px;
     min-width: $width;
     overflow: hidden;
     position: relative;
