@@ -27,14 +27,25 @@ links.forEach(link => {
 
 activeNav();
 
-/*const profileDropDown = () => {
-    const icon = document.querySelector('.profile-dropdown-icon');
-    const dropdown = document.querySelector('.profile-dropdown');
+const profileDropDown = (x) => {
+    if (x.matches) {
+        const icon = document.querySelector('.profile-dropdown-icon');
+        const dropdown = document.querySelector('.profile-dropdown');
 
-    icon.addEventListener('click',()=>{
-        icon.classList.toggle('profile-dropdown-icon--active');
-        dropdown.classList.toggle('profile-dropdown--active');
-    });
+        icon.addEventListener('click',()=>{
+            icon.classList.toggle('profile-dropdown-icon--active');
+            dropdown.classList.toggle('profile-dropdown--active');
+        });
+    }
+
+    else {
+        const icon = document.querySelector('.profile-dropdown-icon');
+        icon.addEventListener('click',()=>{
+            window.location.href = './profile.html';
+        });
+    }
 }
 
-profileDropDown();*/
+var x = window.matchMedia("(min-width: 768px)")
+profileDropDown(x)
+x.addListener(profileDropDown)

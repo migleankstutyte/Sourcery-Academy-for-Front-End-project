@@ -1,7 +1,9 @@
 <!-- side-bar layout -->
 <div class="flex">
-    <div class="flex__side-bar">
+    <div class="flex__side-bar flex__side-bar--fixed">
         <%include src="../company/company-side-bar.html"%>
     </div>
-    <div class="flex__side-bar-content">COMPANY CONTENT PAGE</div>
+    <div class="flex__side-bar-content flex__side-bar-content--company" id="js-content">
+        <%include src="../company/pages/company-events/company-events.html"%>
+    </div>
 </div>
