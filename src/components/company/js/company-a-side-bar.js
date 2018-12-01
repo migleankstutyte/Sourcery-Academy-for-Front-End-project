@@ -3,48 +3,49 @@ const arr = [
     {
         title: "Projects",
         id: 'id="js-project"',
-        hasPicture: false
+        hasPicture: ''
     },
     {
         title: "Articles",
         id: 'id="js-articles"',
-        hasPicture: false
+        hasPicture: ''
     },
     {
         title: "Dashboard",
         id: 'id="js-dashbord"',
-        hasPicture: true
+        hasPicture: '<img src="../images/company_icons/Arrow.png" alt="Arrow"/>'
     },
     {
         title: "Reports",
         id: 'id="js-reports"',
-        hasPicture: false
+        hasPicture: ''
     },
     {
         title: "Tasks",
         id: 'id="js-tasks"',
-        hasPicture: false
+        hasPicture: ''
     },
     {
         title: "Events",
         id: 'id="js-events"',
-        hasPicture: false
+        hasPicture: '',
+        href: "/html/company/company-events.html"
     },
     {
         title: "Company Ads",
         id: 'id="js-company-ads"',
-        hasPicture: false,
-        href: "/html/company-ads.html"
+        hasPicture: '',
+        href: "/html/company/company-ads.html"
     },
     {
         title: "Client Account",
         id: 'id="js-client-account"',
-        hasPicture: false
+        hasPicture: ''
     },
     {
         title: "Feedback/tickets",
         id: 'id="js-feedback"',
-        hasPicture: false
+        hasPicture: ''
     }
 ];
 
@@ -54,15 +55,8 @@ function renderSideBarElements() {
     // loop through array
     for (let i = 0; i < arr.length; i++) {
         resultHtml += `
-        <li role="menuitem" class="nav-list_item" ${arr[i].id}"> 
-            <a href="#" class="nav-list__item-link">${arr[i].title}
-            ${
-                arr[i].hasPicture // If array has picture (arrow in side-bar) - show img
-                    ? `<span>
-                  <img src="../images/company_icons/Arrow.png" alt="Arrow"/>
-              </span></a>`
-                    : ""
-            }
+        <li role="menuitem" class="nav-list__item" ${arr[i].id}"> 
+            <a href="#" class="nav-list__item-link">${arr[i].title}${arr[i].hasPicture}</a>
         </li>`;
     }
     document.querySelector(".nav-list").innerHTML = resultHtml; //show results
@@ -77,14 +71,7 @@ function renderSideBarElementsMobile() {
     for (let i = 0; i < arr.length; i++) {
         resultHtml += `
         <li role="menuitem" class="list__item" ${arr[i].id}"> 
-            <a href="${arr[i].href}">${arr[i].title}
-            ${
-                arr[i].hasPicture // If array has picture (arrow in side-bar) - show img
-                    ? `<span>
-                  <img src="../images/company_icons/Arrow.png" alt="Arrow"/>
-              </span></a>`
-                    : ""
-            }
+            <a href="${arr[i].href}">${arr[i].title}${arr[i].hasPicture}
         </li>`;
     }
     document.querySelector(".list").innerHTML = resultHtml; //show results
