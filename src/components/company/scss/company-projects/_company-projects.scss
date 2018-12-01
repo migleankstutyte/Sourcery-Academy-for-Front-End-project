@@ -217,22 +217,26 @@
     }
 }
 @media (max-width: 775px) {
-    .projects__headline {
+    .projects {
+        margin-top: 20px;
 
-        &-progress,
-        &-act,
-        &-est {
-            min-width: 15%;
+        &__headline {
+
+            &-progress,
+            &-act,
+            &-est {
+                min-width: 15%;
+            }
         }
-    }
 
-    .projects__row {
+        &__row {
 
-        &-progress,
-        &-act,
-        &-est {
-            min-width: 10%;
-        }   
+            &-progress,
+            &-act,
+            &-est {
+                min-width: 10%;
+            }   
+        }
     }
 }
 @media (max-width: 480px) {
