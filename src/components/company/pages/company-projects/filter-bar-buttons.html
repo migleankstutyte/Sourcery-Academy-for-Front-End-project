@@ -27,14 +27,32 @@
     <button class="filter-bar-button" title="Choose date" id="pick-date" role="button" aria-label="Choose date">
         <p class="filter-bar-button__main"><img src="../images/company_icons/Calendar_ico.png" alt="Calendar"/>Dates<i class="fas fa-angle-down"></i></p>
         <div id="calendar" class="calendar">
-            <input type="date" value="2018-12-0"/>
+            <input type="date" value="2018-12-04"/>
         </div>
     </button>
     <div class="no-space">
-        <button class="filter-bar-button filter-bar-button--small" title="Email" role="button" aria-label="Projects">
-            <p class="filter-bar-button__main"><img src="../images/company_icons/Email.png" alt="Email"/></i></p>
+        <button class="filter-bar-button filter-bar-button--small create-btn" title="Email" role="button" aria-label="Email">
+            <a href="#openEmailModal" class="create-btn__button-text create-btn__button-text--email">
+                <p class="filter-bar-button__main">
+                    <img src="../images/company_icons/Email.png" alt="Email"/></i>
+                </p>
+            </a>
         </button><button class="filter-bar-button filter-bar-button--small" title="Download" role="button" aria-label="Projects">
             <p class="filter-bar-button__main"><img src="../images/company_icons/Download.png" alt="Download"/></p>
         </button>
+    </div>
+</div>
+
+<!-- modal -->
+<div id="openEmailModal" class="modal modal--email">
+    <div class="modal__content">
+        <a href="#close" title="Close" class="close" aria-label="Close"><i class="fas fa-times"></i></a>
+        <div class="modal__row">
+            <label for="requirment" class="modal__row-title">Email</label>
+            <input type="email" name="email" class="modal__row-textarea" aria-label="requirments" aria-multiline="true" contenteditable="true">
+        </div>
+        <div class="create-btn__button">
+            <a href="#close" title="Send" class="create-btn__button-text" role="button" aria-label="Send" tabindex="1">Send</a>
+        </div>
     </div>
 </div>

@@ -22,6 +22,10 @@
             line-height: 28px;
             margin: 4px;
             text-decoration: none;
+
+            &--email {
+                margin: 0;
+            }
         }
     }
 }
@@ -71,6 +75,14 @@
             width: 400px;
         }
     }
+
+    &--email {
+        z-index: $z-modal;
+
+        .modal__content {
+            padding-top: 15px;
+        }
+    }
 }
 
 .close {
@@ -79,7 +91,7 @@
 
     background: $close-button-color;
     border-radius: 12px;
-    box-shadow: 1px 1px 3px 0.05 $black;
+    box-shadow: 1px 1px 3px .05 $black;
     color: $white;
     font-weight: $weight-bold;
     line-height: 25px;
