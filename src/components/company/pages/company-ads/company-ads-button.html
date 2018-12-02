@@ -1,0 +1,40 @@
+<!-- button -->
+<div class="create-btn">
+    <div class="create-btn__button">
+        <a href="#openModal" title="Create new ad" class="create-btn__button-text" role="button" aria-label="Create new">Create New Ad</a>
+    </div>
+</div>
+<!-- modal -->
+<div id="openModal" class="modal">
+	<div class="modal__content">
+		<a href="#close" title="Close" class="close" aria-label="Close"><i class="fas fa-times"></i></a>
+        <h1>Create New Ad</h1>
+        <div class="modal__row">
+            <label for="title" class="modal__row-title">Title</label>
+            <select name="position" id="title" class="modal__row-select" role="listbox" aria-orientation="vertical">
+                <option value="blank">-</option>
+                <option value="Designer (UI)">Designer (UI)</option>
+                <option value="Director of Engineering Office in Vilnius">Director of Engineering Office in Vilnius</option>
+                <option value=".Net Developer">.Net Developer</option>
+                <option value="QA Analyst">QA Analyst</option>
+                <option value="Product Owner">Product Owner</option>
+                <option value="Senior Designer (UI)">Senior Designer (UI)</option>
+                <option value="Senior iOS Developer">Senior iOS Developer</option>
+                <option value="Senior Java Developer">Senior Java Developer</option>
+                <option value="Senior .Net Developer">Senior .Net Developer</option>
+                <option value="Strategic Account Executive">Strategic Account Executive</option>
+            </select>
+        </div>
+        <div class="modal__row">
+            <label for="requirment" class="modal__row-title">Requirments</label>
+            <textarea name="message" rows="5" cols="48" class="modal__row-textarea" aria-label="requirments" aria-multiline="true" contenteditable="true" role="textbox"></textarea>
+        </div>
+        <div class="modal__row">
+            <label for="date" class="modal__row-title">Application deadline</label>
+            <input type="date" id="date" class="modal__row-input" aria-label="application date">
+        </div>
+        <div class="create-btn__button">
+            <a href="#close" title="Add new ad" class="create-btn__button-text" role="button" aria-label="Add new" tabindex="1">Add new ad</a>
+        </div>
+	</div>
+</div>
