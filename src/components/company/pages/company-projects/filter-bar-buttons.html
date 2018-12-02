@@ -2,12 +2,26 @@
     <button class="filter-bar-button" role="button" aria-label="View All">
         <p class="filter-bar-button__main">View All</p>
     </button>
-    <button class="filter-bar-button filter-bar-button--active" role="button" aria-label="Reccurence" aria-pressed="true">
-        <p class="filter-bar-button__main">Teams<i class="fas fa-times"></i></p>
+    <button class="filter-bar-button filter-bar-button--active" id="teams" role="button" aria-label="Reccurence" aria-pressed="true">
+        <p class="filter-bar-button__main">Teams<i class="fas fa-times" id="fa-times"></i></p>
     </button>
-    <button class="filter-bar-button" role="button" aria-label="Projects">
-        <p class="filter-bar-button__main">Projects<i class="fas fa-angle-down"></i></p>
-    </button>
+    <select class="filter-bar-button filter-bar-button--select" aria-label="Projects"aria-orientation="vertical" role="listbox"><i class="fas fa-angle-down"></i>
+        <option class="filter-bar-button__main" role="option" value="0">Projects</option>
+        <option class="filter-bar-button__main" role="option" value="1">CSG Government Solutions</option>
+        <option class="filter-bar-button__main" role="option" value="2">Nexenta</option>
+        <option class="filter-bar-button__main" role="option" value="3">Uptake Technologies</option>
+        <option class="filter-bar-button__main" role="option" value="4">Monotype.com</option>
+        <option class="filter-bar-button__main" role="option" value="5">Byline Bank</option>
+        <option class="filter-bar-button__main" role="option" value="6">Art Institute of Chicago</option>
+        <option class="filter-bar-button__main" role="option" value="7">Fonts.com</option>
+        <option class="filter-bar-button__main" role="option" value="8">AclsOnline.us</option>
+        <option class="filter-bar-button__main" role="option" value="9">Jet Support</option>
+        <option class="filter-bar-button__main" role="option" value="10">Monotype Recorder</option>
+        <option class="filter-bar-button__main" role="option" value="11">Penta Technologies</option>
+        <option class="filter-bar-button__main" role="option" value="12">Monotype.com</option>
+        <option class="filter-bar-button__main" role="option" value="13">Byline Bank</option>
+        <option class="filter-bar-button__main" role="option" value="14">Nexenta</option>
+    </select>
 </div>
 <div class="second-block">
     <button class="filter-bar-button" role="button" aria-label="Choose date">

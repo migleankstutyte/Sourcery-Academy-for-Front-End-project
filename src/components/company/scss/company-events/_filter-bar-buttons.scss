@@ -14,10 +14,20 @@
         border: 1px solid $button-border-color;
         border-radius: 2px;
         box-shadow: 0 2px 2px $button-box-shadow;
+        cursor: pointer;
         height: 30px;
         margin-right: 5px;
 
+        &--select {
+            color: $button-text-color;
+            font-size: 13px;
+            margin: 0;
+            padding: 0 6px;
+            width: 95px;
+        }
+
         &__main {
+            border: 0;
             color: $button-text-color;
             font-size: 13px;
             margin: 0;
@@ -34,6 +44,8 @@
             img {
                 padding-right: 8px;
             }
+
+            
         }
 
         &--active {
@@ -69,8 +81,8 @@
 // Responsive layout
 @media (max-width: 1030px) {
     .filter-bar__left {
-        text-align: center;
         padding-bottom: 10px;
+        text-align: center;
 
         .first-block {
             display: inherit;
@@ -99,4 +111,13 @@
     .filter-bar__left {
         padding-top: 20px;
     }
+}
+
+.mystyle {
+    width: 100%;
+    padding: 25px;
+    background-color: coral;
+    color: white;
+    font-size: 25px;
+    box-sizing: border-box;
 }
