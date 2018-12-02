@@ -3,7 +3,7 @@ const content = document.getElementById("js-content");
 const ads = document.getElementById("js-company-ads");
 
 ads.addEventListener("click", function() {
-    document.getElementById("js-content").innerHTML = `
+    content.innerHTML = `
         <div class="create-btn">
             <div class="create-btn__button">
                 <a href="#openModal" title="Create new ad" class="create-btn__button-text">Create New Ad</a>
@@ -44,6 +44,9 @@ ads.addEventListener("click", function() {
             </div>
         </div>
         </div>
+
+        <button onclick="topFunction()" id="myBtn" class="to-top-button" title="Go to top" type="button" role="button" aria-label="Go to top"><i class="fas fa-angle-up fa-2x"></i></button>
+
         <div class="ads">
             <div class="ads__headline">
                 <div class="ads__headline-title">Title</div>
@@ -112,7 +115,7 @@ setTimeout(function() {
     // show side-bar content, when side-bar element is clicked
     const events = document.getElementById("js-events");
     events.addEventListener("click", function() {
-        document.getElementById("js-content").innerHTML = `
+        content.innerHTML = `
         <div class="filter-bar">
             <div class="filter-bar__left">
                 <button class="filter-bar-button" role="button" aria-label="View All">
@@ -129,6 +132,8 @@ setTimeout(function() {
                 </div>
             </div>
         </div>
+
+        <button onclick="topFunction()" id="myBtn" class="to-top-button" title="Go to top" type="button" role="button" aria-label="Go to top"><i class="fas fa-angle-up fa-2x"></i></button>
 
         <table class="events" role="table" aria-label="Events">
             <tr class="events__headline" role="row">

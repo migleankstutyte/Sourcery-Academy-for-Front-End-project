@@ -36,6 +36,7 @@
 '../components/header/header',
 '../components/bridge/bridge',
 '../components/bridge/bridge-action-bar/bridge-action-bar.scss',
+'../components/company/to-top-button/to-top-button',
 '../components/company/scss/company',
 '../components/company/scss/company-events/filter-bar-buttons',
 '../components/company/scss/company-events/filter-bar-input',
@@ -75,6 +76,7 @@
         box-shadow: 1px 0 0 $side-bar-border-color;
         height: 100%;
         position: fixed;
+        z-index: $z-side-bar;
     }
 
     &__side-bar-content {
