@@ -1,11 +1,11 @@
 <div class="first-block">
-    <button class="filter-bar-button" role="button" aria-label="View All">
+    <button class="filter-bar-button" title="View all" role="button" aria-label="View All">
         <p class="filter-bar-button__main">View All</p>
     </button>
-    <button class="filter-bar-button filter-bar-button--active" id="teams" role="button" aria-label="Reccurence" aria-pressed="true">
+    <button class="filter-bar-button filter-bar-button--active" title="Teams" id="teams" role="button" aria-label="Reccurence" aria-pressed="true">
         <p class="filter-bar-button__main">Teams<i class="fas fa-times" id="fa-times"></i></p>
     </button>
-    <select class="filter-bar-button filter-bar-button--select" aria-label="Projects"aria-orientation="vertical" role="listbox"><i class="fas fa-angle-down"></i>
+    <select class="filter-bar-button filter-bar-button--select" title="Select project" aria-label="Projects"aria-orientation="vertical" role="listbox"><i class="fas fa-angle-down"></i>
         <option class="filter-bar-button__main" role="option" value="0">Projects</option>
         <option class="filter-bar-button__main" role="option" value="1">CSG Government Solutions</option>
         <option class="filter-bar-button__main" role="option" value="2">Nexenta</option>
@@ -24,13 +24,16 @@
     </select>
 </div>
 <div class="second-block">
-    <button class="filter-bar-button" role="button" aria-label="Choose date">
+    <button class="filter-bar-button" title="Choose date" id="pick-date" role="button" aria-label="Choose date">
         <p class="filter-bar-button__main"><img src="../images/company_icons/Calendar_ico.png" alt="Calendar"/>Dates<i class="fas fa-angle-down"></i></p>
+        <div id="calendar" class="calendar">
+            <input type="date" value="2018-12-0"/>
+        </div>
     </button>
     <div class="no-space">
-        <button class="filter-bar-button filter-bar-button--small" role="button" aria-label="Projects">
+        <button class="filter-bar-button filter-bar-button--small" title="Email" role="button" aria-label="Projects">
             <p class="filter-bar-button__main"><img src="../images/company_icons/Email.png" alt="Email"/></i></p>
-        </button><button class="filter-bar-button filter-bar-button--small" role="button" aria-label="Projects">
+        </button><button class="filter-bar-button filter-bar-button--small" title="Download" role="button" aria-label="Projects">
             <p class="filter-bar-button__main"><img src="../images/company_icons/Download.png" alt="Download"/></p>
         </button>
     </div>
