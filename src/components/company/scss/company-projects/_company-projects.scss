@@ -1,0 +1,251 @@
+.projects {
+    margin-top: 43px;
+
+    &__headline {
+        background-color: $athens-gray;
+        border: 1px solid $iron-light;
+        border-radius: 2px 2px 0 0;
+        box-shadow: 0 1px 1px .05 $black;
+        display: flex;
+        justify-content: space-between;
+        min-height: 40px;
+        padding-left: 17px;
+
+        &-projects,
+        &-progress,
+        &-act,
+        &-est {
+            align-self: center;
+            color: $rolling-stone;
+            font-size: .75rem;
+            font-weight: $weight-regular !important;
+            text-transform: uppercase;
+        }
+
+        &-projects {
+            flex-grow: 1;
+            text-align: left;
+        }
+
+        &-progress {
+            min-width: 135px;
+        }
+
+        &-act {
+            min-width: 78px;
+        }
+
+        &-est {
+            min-width: 165px;
+        }
+    }
+
+    &__row {
+        $act-text-color: $jungle-green;
+        $est-text-color: $curious-blue;
+
+        border: 1px solid $iron-light;
+        border-radius: 2px 2px 0 0;
+        display: flex;
+        justify-content: space-between;
+        min-height: 78px;
+        padding-left: 17px;
+
+        &-progress,
+        &-act,
+        &-est {
+            align-self: center;
+            color: $wood-smoke;
+            font-size: .875rem;
+        }
+
+        &-projects {
+            align-self: center;
+            flex-grow: 1;
+            text-align: left;
+
+            .description {
+                $description-text-color: $wood-smoke;
+
+                padding-bottom: 10px;
+
+                &__image {
+                    float: left;
+                    padding-right: 10px;
+                }
+
+                &__title {
+                    color: $description-text-color;
+                }
+            }
+
+            .line {
+                $long-line-color: $athens-gray-light;
+                $blue-line: $curious-blue;
+                $green-line: $jungle-green;
+                $red-line: $cinnabar;
+
+                position: relative;
+
+                &__long {
+                    background-color: $long-line-color;
+                    border-radius: 2px;
+                    height: 4px;
+                    width: 64%;
+                }
+
+                &__underline {
+                    height: 4px;
+                    position: absolute;
+                    top: 0;
+
+                    &--34-blue {
+                        background-color: $blue-line;
+                        width: 14%;
+                    }
+
+                    &--74-blue,
+                    &--81-blue {
+                        background-color: $blue-line;
+                        width: 50%;
+                    }
+
+                    &--24-blue {
+                        background-color: $blue-line;
+                        width: 27%;
+                    }
+
+                    &--100-green {
+                        background-color: $green-line;
+                        width: 64%;
+                    }
+
+                    &--24-400-blue,
+                    &--15-blue,
+                    &--24-350-blue {
+                        background-color: $blue-line;
+                        width: 8%;
+                    }
+
+                    &--37-blue,
+                    &--21-blue {
+                        background-color: $blue-line;
+                        width: 15%;
+                    }
+
+                    &--24-red,
+                    &--11-red {
+                        background-color: $red-line;
+                        width: 64%;
+                    }
+
+                    &--55-blue {
+                        background-color: $blue-line;
+                        width: 29%;
+                    }
+
+                    &--76-blue {
+                        background-color: $blue-line;
+                        width: 45%;
+                    }
+                }
+            }
+        }
+
+        &-progress {
+            $number-color: $jungle-green;
+
+            img {
+                padding-left: 5px;
+            }
+
+            &--green {
+                color: $number-color;
+            }
+        }
+
+        &-progress,
+        &-act {
+            min-width: 120px;
+        }
+
+        &-act {
+            $number-color: $cinnabar;
+
+            color: $act-text-color;
+
+            &--red {
+                color: $number-color;
+            }
+        }
+
+        &-est {
+            color: $est-text-color;
+            min-width: 100px;
+        }
+    }
+}
+
+// Responsive layout
+@media (max-width: 950px) {
+    .projects__headline {
+
+        &-progress,
+        &-act,
+        &-est {
+            min-width: 70px;
+        }
+    }
+
+    .projects__row {
+        &-progress,
+        &-act,
+        &-est {
+            min-width: 60px;
+        }   
+    }
+}
+@media (max-width: 800px) {
+
+    .projects__headline,
+    .projects__row {
+        &-projects {
+            max-width: 50%;
+        }  
+    }
+}
+@media (max-width: 775px) {
+    .projects {
+        margin-top: 20px;
+
+        &__headline {
+
+            &-progress,
+            &-act,
+            &-est {
+                min-width: 15%;
+            }
+        }
+
+        &__row {
+
+            &-progress,
+            &-act,
+            &-est {
+                min-width: 10%;
+            }   
+        }
+    }
+}
+@media (max-width: 480px) {
+
+    .projects__row {
+
+        background-color: $white;
+        padding: 10px;
+
+        &-projects {
+            max-width: 40%;
+        } 
+    }
+}
