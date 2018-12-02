@@ -48,11 +48,13 @@
     <div class="modal__content">
         <a href="#close" title="Close" class="close" aria-label="Close"><i class="fas fa-times"></i></a>
         <div class="modal__row">
-            <label for="requirment" class="modal__row-title">Email</label>
-            <input type="email" name="email" class="modal__row-textarea" aria-label="requirments" aria-multiline="true" contenteditable="true">
+            <label for="email" class="modal__row-title">Email</label>
+            <input type="email" name="email" id="email" class="modal__row-textarea" aria-label="requirments" aria-multiline="true" contenteditable="true">
         </div>
-        <div class="create-btn__button">
-            <a href="#close" title="Send" class="create-btn__button-text" role="button" aria-label="Send" tabindex="1">Send</a>
+        <div>
+            <button type="submit" id="send" title="Send" class="create-btn__button create-btn__button--send">Send</button>
+            <button class="create-btn__button create-btn__button--close"><a href="#close" title="Close" class="create-btn__button-text" role="button" aria-label="Send" tabindex="1" >Close</a></button>
         </div>
+        <div id="textDiv" class="modal__content-textDiv"></div>
     </div>
 </div>

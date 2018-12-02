@@ -65,8 +65,11 @@
             }
         }
 
+        &:focus {
+            outline: none;
+        }
+
         .calendar {
-            background: $porcelain;
             margin-top: 6px;
             opacity: 0;
             padding: 10px;
@@ -74,6 +77,12 @@
             transform: translatey(-100%);
             transition: .6s;
             visibility: hidden;
+            z-index: $z-calendar-input;
+
+            input {
+                border: 1px solid $button-border-color;
+                padding: 5px;
+            }
 
             &.appear {
                 opacity: 1;

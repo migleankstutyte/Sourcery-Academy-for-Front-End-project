@@ -15,3 +15,11 @@ pickDate.addEventListener(
     },
     false
 );
+
+// In modal Email button send
+const send = document.getElementById("send");
+const input = document.getElementById("email");
+send.onclick = function() {
+    document.getElementById("textDiv").innerHTML = "Send. Check your email.";
+    document.getElementById("email").value= "";
+};

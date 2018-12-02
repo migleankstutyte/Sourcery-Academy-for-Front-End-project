@@ -32,7 +32,7 @@ ads.addEventListener("click", function() {
                 </div>
                 <div class="modal__row">
                     <label for="requirment" class="modal__row-title">Requirments</label>
-                    <textarea name="message" rows="5" cols="48" class="modal__row-textarea"></textarea>
+                    <textarea name="message" id="requirment" name="requirment" rows="5" cols="48" class="modal__row-textarea"></textarea>
                 </div>
                 <div class="modal__row">
                     <label for="date" class="modal__row-title">Application deadline</label>
