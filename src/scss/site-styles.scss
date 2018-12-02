@@ -41,14 +41,11 @@
 '../components/activity/activity-card-post/activity-card-content/activity-card-content',
 '../components/activity/activity-card-post/activity-card-comments/activity-card-comments',
 '../components/activity/filter-bar/filter',
+'../components/profile/profile-info/profile-info',
 '../components/footer/footer';
 
 // Print stylesheet
 @import 'print';
-
-// Fonts
-@import url('https://use.typekit.net/chf3btc.css');
-
 
 // flex-box declaration
 .flex {
@@ -68,7 +65,7 @@
 }
 
 .page-container {
-    background-color: $porcelain; 
+    background-color: $porcelain;
     margin-top: 56px; // that content would be seen below header, not on it
     padding: 0 20px;
 }
