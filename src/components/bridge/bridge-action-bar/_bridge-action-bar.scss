@@ -88,7 +88,9 @@ $_color-box-shadow: $iron-light;
         flex-direction: column;
     }
     .search--bridge-block {
-        margin-top: 5px;
+        margin-top: 5px !important;
+        width: 100% !important;
+        margin-bottom: 5px !important;
     }
 }
 @media (max-width: 570px) {
@@ -109,7 +111,7 @@ $_color-box-shadow: $iron-light;
         }
     }
     .search--bridge-block {
-        margin-top: 5px;
+        margin-top: 5px !important;
         order: 1;
         width: 100%;
     }
