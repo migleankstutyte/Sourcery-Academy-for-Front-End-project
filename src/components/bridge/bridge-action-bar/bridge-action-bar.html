@@ -1,33 +1,37 @@
 <header class="bridge-filter">
-    <div class="flex">
-        <ul class="bridge-filter__list">
-            <li class="bridge-filter__list-item bridge-filter__list-item--active js-all-team">
-                <a class="bridge-filter__list-text bridge-filter__list-text--active">All</a>
-            </li>
-            <li class="bridge-filter__list-item js-kaunas-team">
-                <a class="bridge-filter__list-text" href="#nolink">Kaunas</a>
-            </li>
-            <li class="bridge-filter__list-item js-vilnius-team">
-                <a class="bridge-filter__list-text" href="#nolink">Vilnius</a>
-            </li>
-            <li class="bridge-filter__list-item js-chicago-team">
-                <a class="bridge-filter__list-text" href="#nolink">Chicago</a>
-            </li>
-        </ul>
-        <div class="bridge-filter__button-field">
-            <select class="bridge-filter__button" id="colorselector">
-                <option class="select-departament">Departaments</option>
-                <option class="select-leadership">Leadership Team</option>
-                <option class="select-project">Project and Product Leads</option>
-                <option class="select-designer">UI & UX Designers</option>
-                <option class="select-developer">Web and Mobile Developers</option>
-                <option class="select-marketing">Marketing Specialists</option>
-            </select>
+    <div class="flex flex--bridge">
+        <div class="bridge-filter__menu-block">
+            <ul class="bridge-filter__list">
+                <li class="bridge-filter__list-item bridge-filter__list-item--active js-all-team">
+                    <a class="bridge-filter__list-text bridge-filter__list-text--active">All</a>
+                </li>
+                <li class="bridge-filter__list-item js-kaunas-team">
+                    <a class="bridge-filter__list-text" href="#nolink">Kaunas</a>
+                </li>
+                <li class="bridge-filter__list-item js-vilnius-team">
+                    <a class="bridge-filter__list-text" href="#nolink">Vilnius</a>
+                </li>
+                <li class="bridge-filter__list-item js-chicago-team">
+                    <a class="bridge-filter__list-text" href="#nolink">Chicago</a>
+                </li>
+            </ul>
+            <div class="bridge-filter__border"></div>
+            <div class="bridge-filter__button-field">
+                <select class="bridge-filter__button">
+                    <option class="select-departament">Departaments</option>
+                    <option class="select-leadership">Leadership</option>
+                    <option class="select-project">Project</option>
+                    <option class="select-designer">UI & UX</option>
+                    <option class="select-developer">Web and Mobile</option>
+                    <option class="select-marketing">Marketing</option>
+                </select>
+                <img class="bridge-filter__img" src="../images/bridge/arrow-down.jpg" alt="arrow">
+            </div>
         </div>
-        <div class="search">
-                <input type="search"title="Keywords for a site-wide search"
-                aria-label="Keywords for a site-wide search" class="form-control input-append" placeholder="Search"/>
-                <img role="img" src="/images/company_icons/Magnifying_ico.svg" alt="search"/>
+        <div class="search search--bridge-block">
+            <input type="search" title="Keywords for a site-wide search" aria-label="Keywords for a site-wide search"
+                class="form-control input-append search--bridge" placeholder="Search" />
+            <img role="img" src="/images/company_icons/Magnifying_ico.svg" alt="search" />
         </div>
     </div>
 </header>
