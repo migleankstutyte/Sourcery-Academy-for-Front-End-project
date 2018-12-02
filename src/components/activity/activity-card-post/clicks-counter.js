@@ -25,8 +25,8 @@ if (socialButtonsArray) {
 
 // Change button text color depends on what class do u use
 
-const buttonColorPicker = document.querySelector(".social-button__icon");
-const colorTarget = document.querySelector(".js-likes-number")
+const buttonColorPicker = document.querySelectorAll(".social-button__icon");
+const colorTarget = document.querySelector(".js-likes-number");
 
 if(buttonColorPicker.classList.contains("js-empty-heart")){
     colorTarget.style.color= "#13191b";
