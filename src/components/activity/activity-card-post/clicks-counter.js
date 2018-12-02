@@ -1,5 +1,5 @@
-setTimeout(function() {
-    const socialButtonsArray = document.querySelectorAll(".js-clickme");
+const socialButtonsArray = document.querySelectorAll(".js-clickme");
+if (socialButtonsArray) {
     socialButtonsArray.forEach(elem => {
         elem.addEventListener("click", () => {
             if (event.target.classList.contains("js-clickme")) {
@@ -9,10 +9,10 @@ setTimeout(function() {
             }
         });
     });
-}, 10);
+};
 
-setTimeout(function() {
     const likesDelete = document.querySelector(".js-likes-delete");
+    if(likesDelete){
     likesDelete.addEventListener("click", () => {
         const deleteNumber = document.querySelector(".js-delete-number");
         let count = Number(deleteNumber.textContent);
@@ -21,4 +21,4 @@ setTimeout(function() {
             deleteNumber.innerHTML = count;
         }
     });
-}, 10);
+};
