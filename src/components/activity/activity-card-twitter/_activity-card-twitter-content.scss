@@ -1,27 +1,27 @@
-.twitter-card {
+.twitter-content {
+    $_twitter-active-color: $curious-blue;
+
     &__article {
         padding: 0 20px;
     }
 
-    &__heading {
-        color: $wood-smoke;
-        font-size: 1.063rem;
-        font-weight: $weight-bold;
-        line-height: 1.2;
-        margin-top: 0;
-    }
-
     &__text {
-        color: $rolling-stone;
-        font-size: .9375rem;
-        line-height: 1.2;
+        color: $wood-smoke;
+        font-size: 1rem;
+        font-style: italic;
+        font-weight: $weight-regular;
+        line-height: 1.375;
         margin-bottom: 17px;
         margin-top: 0;
+    
+        &--active {
+            color: $_twitter-active-color;
+        }
     }
 
     &__img {
         display: flex;
-        
+
         img {
             height: 100%;
             width: 100%;
@@ -30,6 +30,7 @@
 
     &__buttons {
         background-color: $white;
+        border-top: 1px solid $iron-light;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
