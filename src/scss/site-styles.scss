@@ -35,11 +35,23 @@
 @import 'components/helpers',
 '../components/header/header',
 '../components/bridge/bridge',
-'../components/company/company',
+'../components/bridge/bridge-action-bar/bridge-action-bar.scss',
+'../components/company/to-top-button/to-top-button',
+'../components/company/scss/company',
+'../components/company/scss/company-events/filter-bar-buttons',
+'../components/company/scss/company-events/filter-bar-input',
+'../components/company/scss/company-events/company-events',
+'../components/company/scss/company-events/company-events-bar',
+'../components/company/back-button/back-button',
+'../components/company/scss/company',
+'../components/company/scss/company-ads/company-ads',
+'../components/company/scss/company-projects/company-projects',
+'../components/company/scss/company-ads/modal',
 '../components/activity/activity-card-post/activity-card-post',
 '../components/activity/activity-card-post/activity-card-header/activity-card-header',
 '../components/activity/activity-card-post/activity-card-content/activity-card-content',
 '../components/activity/activity-card-post/activity-card-comments/activity-card-comments',
+'../components/activity/activity-card-upload/activity_card_upload',
 '../components/activity/filter-bar/filter',
 '../components/profile/profile-info/profile-info',
 '../components/footer/footer';
@@ -55,12 +67,38 @@
     max-width: 1180px;
     width: 100%;
 
-    &__side-bar {
-        width: 20%;
+    &__side-bar--fixed {
+
+        $side-bar-border-color: $iron-light;
+
+        box-shadow: 1px 0 0 $side-bar-border-color;
+        height: 100%;
+        position: fixed;
+        z-index: $z-side-bar;
     }
 
     &__side-bar-content {
-        width: 78%;
+        background-color: $white;
+        margin-left: 240px;
+        width: 100%;
+
+        &--company {
+            padding: 20px;
+        }
+    }
+}
+
+// responsive layout
+@media (max-width: 775px) {
+    .flex {
+
+        &__side-bar-content {
+            margin-left: 0;
+
+            &--company {
+                padding-top: 50px;
+            }
+        }
     }
 }
 
