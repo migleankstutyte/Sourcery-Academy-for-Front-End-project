@@ -33,6 +33,7 @@
             cursor: pointer;
             font-size: .8125rem;
             height: 30px;
+            outline: none;
         }
 
         &--close {
@@ -71,8 +72,9 @@
         border-radius: 10px;
         margin: 100px auto;
         padding: 5px 20px 13px;
+        padding-top: 15px;
         position: relative;
-        width: 400px;
+        width: 400px;        
     }
 
     h1 {
@@ -95,18 +97,20 @@
             outline: none;
             width: 400px;
         }
-    }
 
-    &--email {
-        z-index: $z-modal;
+        &--text {
+            padding-top: 10px;
 
-        .modal__content {
-            padding-top: 15px;
-
-            &-textDiv {
-                padding-top: 10px;
+            p {
+                text-align: center;
             }
         }
+
+    }
+
+    &--email,
+    &--download {
+        z-index: $z-modal;
     }
 }
 

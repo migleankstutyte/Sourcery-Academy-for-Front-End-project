@@ -7,35 +7,71 @@ setTimeout(function() {
         <div class="filter-bar">
             <div class="filter-bar__left">
                 <div class="first-block">
-                    <button class="filter-bar-button" role="button" aria-label="View All">
+                    <button class="filter-bar-button" title="View all" role="button" aria-label="View All">
                         <p class="filter-bar-button__main">View All</p>
                     </button>
-                    <button class="filter-bar-button filter-bar-button--active" role="button" aria-label="Reccurence" aria-pressed="true">
-                        <p class="filter-bar-button__main">Teams<i class="fas fa-times"></i></p>
+                    <button class="filter-bar-button filter-bar-button--active" title="Teams" id="teams" role="button" aria-label="Reccurence" aria-pressed="true">
+                        <p class="filter-bar-button__main">Teams<i class="fas fa-times" id="fa-times"></i></p>
                     </button>
-                    <button class="filter-bar-button" role="button" aria-label="Projects">
-                        <p class="filter-bar-button__main">Projects<i class="fas fa-angle-down"></i></p>
-                    </button>
+                    <select class="filter-bar-button filter-bar-button--select" title="Select project" aria-label="Projects"aria-orientation="vertical" role="listbox"><i class="fas fa-angle-down"></i>
+                        <option class="filter-bar-button__main" role="option" value="0">Projects</option>
+                        <option class="filter-bar-button__main" role="option" value="1">CSG Government Solutions</option>
+                        <option class="filter-bar-button__main" role="option" value="2">Nexenta</option>
+                        <option class="filter-bar-button__main" role="option" value="3">Uptake Technologies</option>
+                        <option class="filter-bar-button__main" role="option" value="4">Monotype.com</option>
+                        <option class="filter-bar-button__main" role="option" value="5">Byline Bank</option>
+                        <option class="filter-bar-button__main" role="option" value="6">Art Institute of Chicago</option>
+                        <option class="filter-bar-button__main" role="option" value="7">Fonts.com</option>
+                        <option class="filter-bar-button__main" role="option" value="8">AclsOnline.us</option>
+                        <option class="filter-bar-button__main" role="option" value="9">Jet Support</option>
+                        <option class="filter-bar-button__main" role="option" value="10">Monotype Recorder</option>
+                        <option class="filter-bar-button__main" role="option" value="11">Penta Technologies</option>
+                        <option class="filter-bar-button__main" role="option" value="12">Monotype.com</option>
+                        <option class="filter-bar-button__main" role="option" value="13">Byline Bank</option>
+                        <option class="filter-bar-button__main" role="option" value="14">Nexenta</option>
+                    </select>
                 </div>
                 <div class="second-block">
-                    <button class="filter-bar-button" role="button" aria-label="Choose date">
-                        <p class="filter-bar-button__main"><img src="../images/company_icons/Calendar_ico.png" alt="Calendar"/>Dates<i class="fas fa-angle-down"></i></p>
+                    <button class="filter-bar-button" title="Choose date" id="pick-date" role="button" aria-label="Choose date">
+                        <p class="filter-bar-button__main"><img src="/../../images/company_icons/Calendar_ico.png" alt="Calendar"/>Dates<i class="fas fa-angle-down"></i></p>
+                        <div id="calendar" class="calendar">
+                            <input type="date" value="2018-12-04"/>
+                        </div>
                     </button>
                     <div class="no-space">
-                        <button class="filter-bar-button filter-bar-button--small" role="button" aria-label="Projects">
-                            <p class="filter-bar-button__main"><img src="../images/company_icons/Email.png" alt="Email"/></i></p>
-                        </button><button class="filter-bar-button filter-bar-button--small" role="button" aria-label="Projects">
-                            <p class="filter-bar-button__main"><img src="../images/company_icons/Download.png" alt="Download"/></p>
+                        <button class="filter-bar-button filter-bar-button--small create-btn" title="Email" role="button" aria-label="Email">
+                            <a href="#openEmailModal" class="create-btn__button-text create-btn__button-text--email">
+                                <p class="filter-bar-button__main">
+                                    <img src="/../../images/company_icons/Email.png" alt="Email"/></i>
+                                </p>
+                            </a>
+                        </button><button class="filter-bar-button filter-bar-button--small" title="Download" id="download" role="button" aria-label="Download">
+                                <a href="#openDownloadModal" class="create-btn__button-text create-btn__button-text--email">
+                                    <p class="filter-bar-button__main"><img src="/../../images/company_icons/Download.png" alt="Download"/></p>
+                                </a>
                         </button>
                     </div>
                 </div>
-            </div>
-            <div class="filter-bar__right">
-                <div class="search">
-                <input type="search"title="Keywords for a site-wide search"
-                aria-label="Keywords for a site-wide search" class="form-control input-append" placeholder="Search"/>
-                <img role="img" src="/images/company_icons/Magnifying_ico.svg" alt="search"/>
-            </div>
+                <div id="openEmailModal" class="modal modal--email">
+                    <div class="modal__content">
+                        <a href="#close" title="Close" class="close" aria-label="Close"><i class="fas fa-times"></i></a>
+                        <div class="modal__row">
+                            <label for="email" class="modal__row-title">Email</label>
+                            <input type="email" name="email" id="email" class="modal__row-textarea" aria-label="requirments" aria-multiline="true" contenteditable="true">
+                        </div>
+                        <div>
+                            <button type="submit" id="send" title="Send" class="create-btn__button create-btn__button--send">Send</button>
+                            <button class="create-btn__button create-btn__button--close"><a href="#close" title="Close" class="create-btn__button-text" role="button" aria-label="Send" tabindex="1" >Close</a></button>
+                        </div>
+                        <div id="textDiv" class="modal__row modal__row--text"></div>
+                    </div>
+                </div>
+                <div id="openDownloadModal" class="modal modal--download">
+                    <div class="modal__content">
+                        <a href="#close" title="Close" class="close" aria-label="Close"><i class="fas fa-times"></i></a>
+                        <p>Downloaded</p>
+                    </div>
+                </div>
             </div>
         </div>
 

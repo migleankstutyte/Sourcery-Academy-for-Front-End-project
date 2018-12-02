@@ -23,3 +23,11 @@ send.onclick = function() {
     document.getElementById("textDiv").innerHTML = "Send. Check your email.";
     document.getElementById("email").value= "";
 };
+
+// Download button
+const download = document.getElementById("download");
+download.onclick = function() {
+    document.getElementById("downloadDiv").innerHTML = "Saved";
+};
+
+
