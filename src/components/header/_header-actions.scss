@@ -1,0 +1,45 @@
+.header-actions {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+
+    &__item {
+        align-items: center;
+        background-color: $black;
+        border: 0;
+        cursor: pointer;
+        display: flex;
+        flex-shrink: 0;
+        height: 100%;
+        padding: 0 15px;
+
+        &:focus {
+            outline: none;
+        }
+
+        &--search {
+            padding-left: 0;
+        }
+    }
+}
+
+//SHOW DROP DOWN
+.profile-dropdown-icon {
+    position: relative;
+
+    &:hover {
+        background-color: $navy;
+    }
+
+    &--active {
+        background-color: $navy;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-actions {
+        margin-left: auto;
+        margin-right: 10px;
+    }
+}
