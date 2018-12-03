@@ -1,0 +1,44 @@
+.team {
+    padding-bottom: 50px;
+    padding-top: 20px;
+    text-align: center;
+    vertical-align: middle;
+
+    &__text {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        margin-top: 0;
+        text-transform: uppercase;
+    }
+        
+    &__photo {
+        margin: auto;
+        vertical-align: middle;
+        width: 40%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .team {
+        &__photo {
+            width: 60%;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .team {
+        &__text {
+            font-size: 2rem;
+        }    
+    }
+}
+@media (max-width: 700px) {
+    .team {
+        padding-top: 50px;
+
+        &__photo {
+            width: 100%;
+        }
+    }
+}
