@@ -17,17 +17,42 @@
 
         &-text {
             color: $white;
-            font-size: 0.8125rem;
-            letter-spacing: 0.5px;
-            line-height: 28px;
+            font-size: .8125rem;
+            letter-spacing: .5px;
             margin: 4px;
             text-decoration: none;
+
+            &--email {
+                margin: 0;
+            }
+        }
+
+        &--send,
+        &--close {
+            color: $white;
+            cursor: pointer;
+            font-size: .8125rem;
+            height: 30px;
+            outline: none;
+        }
+
+        &--close {
+            $close-button-color: $rolling-stone;
+            $close-button-color-hover: $curious-blue;
+
+            background-color: $close-button-color;
+            float: right;
+            width: 55px;
+
+            &:hover {
+                background-color: $close-button-color-hover;
+            }
         }
     }
 }
 
 .modal {
-    background: black(0.5); // from _functions.scss
+    background: black(.5); // from _functions.scss
     bottom: 0;
     left: 0;
     opacity: 0;
@@ -47,8 +72,13 @@
         border-radius: 10px;
         margin: 100px auto;
         padding: 5px 20px 13px;
+        padding-top: 15px;
         position: relative;
         width: 400px;
+
+        p {
+            text-align: center;
+        }      
     }
 
     h1 {
@@ -68,8 +98,19 @@
         &-select,
         //for Edge
         &-textarea {
+            outline: none;
             width: 400px;
         }
+
+        &--text {
+            padding-top: 10px;            
+        }
+
+    }
+
+    &--email,
+    &--download {
+        z-index: $z-modal;
     }
 }
 
@@ -79,7 +120,7 @@
 
     background: $close-button-color;
     border-radius: 12px;
-    box-shadow: 1px 1px 3px 0.05 $black;
+    box-shadow: 1px 1px 3px .05 $black;
     color: $white;
     font-weight: $weight-bold;
     line-height: 25px;
@@ -104,7 +145,6 @@
 @media (max-width: 775px) {
     .create-btn {
         float: none;
-        // padding-top: 25px;
 
         &__button {
             margin: auto;
@@ -114,22 +154,34 @@
 @media (max-width: 500px) {
     .modal__content {
         margin-top: 80px;
-        width: 350px;
+        width: 300px;
     }
 
     .modal__row {
         display: grid;
-        width: 350px;
+        width: 300px;
 
         &-select,
         &-input,
         &-textarea {
-            font-size: 0.8125rem;
-            width: 350px;
+            font-size: .8125rem;
+            width: 300px;
         }
 
         &-select option {
             max-width: 50px;
+        }
+    }
+
+    .create-btn {
+        &__button {
+            &--send {
+                width: 50px;
+            }
+
+            &--close {
+                float: none;
+            }
         }
     }
 }

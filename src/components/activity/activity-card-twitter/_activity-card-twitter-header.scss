@@ -11,7 +11,7 @@
     }
 
     &__person-img {
-        @include card-img-rounder(50px, 50px);
+        @include card-img-rounder(50px, 50px, 20px);
     }
 
     &__person-item {

@@ -7,13 +7,14 @@
 
     &__text {
         color: $wood-smoke;
+        font-family: $font-primary;
         font-size: 1rem;
         font-style: italic;
         font-weight: $weight-regular;
         line-height: 1.375;
-        margin-bottom: 17px;
+        margin-bottom: 15px;
         margin-top: 0;
-    
+
         &--active {
             color: $_twitter-active-color;
         }

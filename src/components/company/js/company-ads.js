@@ -32,7 +32,7 @@ ads.addEventListener("click", function() {
                 </div>
                 <div class="modal__row">
                     <label for="requirment" class="modal__row-title">Requirments</label>
-                    <textarea name="message" rows="5" cols="48" class="modal__row-textarea"></textarea>
+                    <textarea name="message" id="requirment" name="requirment" rows="5" cols="48" class="modal__row-textarea"></textarea>
                 </div>
                 <div class="modal__row">
                     <label for="date" class="modal__row-title">Application deadline</label>
@@ -118,12 +118,14 @@ setTimeout(function() {
         content.innerHTML = `
         <div class="filter-bar">
             <div class="filter-bar__left">
-                <button class="filter-bar-button" role="button" aria-label="View All">
-                    <p class="filter-bar-button__main">View All</p>
-                </button>
-                <button class="filter-bar-button filter-bar-button--active" role="button" aria-label="Reccurence" aria-pressed="true">
-                    <p class="filter-bar-button__main">Reccurence<i class="fas fa-times"></i></p>
-                </button>
+                <div class="first-block">
+                    <button class="filter-bar-button" role="button" aria-label="View All">
+                        <p class="filter-bar-button__main">View All</p>
+                    </button>
+                    <button class="filter-bar-button filter-bar-button--active" role="button" aria-label="Reccurence" aria-pressed="true">
+                        <p class="filter-bar-button__main">Reccurence<i class="fas fa-times"></i></p>
+                    </button>
+                </div>
             </div>
             <div class="filter-bar__right">
                 <div class="search">
