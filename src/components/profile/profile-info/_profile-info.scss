@@ -153,14 +153,6 @@
         }
     }
 
-    .resume--visible {
-        display:block;
-    }
-
-    .resume--hidden {
-        display:none;
-    }
-
     &-details__skills {
         .skills__title {
             @include details-heading;
