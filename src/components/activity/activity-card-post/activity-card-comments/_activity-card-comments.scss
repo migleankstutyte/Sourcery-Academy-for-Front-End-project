@@ -8,7 +8,7 @@
     }
 
     &__input-img {
-        @include card-img-rounder (36px, 36px);
+        @include card-img-rounder (36px, 36px, 16px);
     }
 
     &__items {
@@ -19,7 +19,7 @@
     }
 
     &__items-img {
-        @include card-img-rounder (36px, 36px);
+        @include card-img-rounder (36px, 36px, 16px);
     }
 
     &__comment-article {
