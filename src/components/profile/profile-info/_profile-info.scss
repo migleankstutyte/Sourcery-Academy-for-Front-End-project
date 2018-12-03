@@ -153,6 +153,14 @@
         }
     }
 
+    .resume--visible {
+        display:block;
+    }
+
+    .resume--hidden {
+        display:none;
+    }
+
     &-details__skills {
         .skills__title {
             @include details-heading;
@@ -174,6 +182,15 @@
                 min-height: 30px;
                 margin: 3px 5px 3px 0;
                 padding: 6px 10px;
+            }
+
+            &--hidden {
+                display: none;
+            }
+
+            &:hover .skills__buttons--hidden {
+                display: flex;
+                flex-wrap: wrap;
             }
         }
     }
@@ -227,9 +244,5 @@
         .contacts__item-title {
             margin-bottom: 5px;
         }
-    }
-    //curious blue effect for selected text
-    ::selection {
-        background-color: $_color-accent;
     }
 }
