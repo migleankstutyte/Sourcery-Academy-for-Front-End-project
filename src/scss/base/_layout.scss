@@ -12,6 +12,7 @@
 
     &--action-bar {
         background-color: $action-bar-background;
+        padding-top: 58px;
     }
 
     &__container {
@@ -20,7 +21,7 @@
         width: 1180px;
 
         @media screen and (max-width: 1228px) {
-            padding: 0 1.5rem;
+            padding: 0 20px;
         }
     }
 }

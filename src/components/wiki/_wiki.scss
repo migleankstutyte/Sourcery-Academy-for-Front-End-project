@@ -1,0 +1,43 @@
+.error-message {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.wiki-containter {
+    align-items: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin-top: 70px;
+
+    @media screen and (max-width: 750px) {
+        flex-direction: row;
+    }
+
+    &__img {
+        display: flex;
+        flex-shrink: 0;
+        height: auto;
+        width: 150px;
+
+        @media screen and (max-width: 750px) {
+            margin-right: 40px;
+        }
+
+        @media screen and (max-width: 450px) {
+            margin-right: 20px;
+            width: 100px;
+        }
+    }
+
+    &__text {
+        display: flex;
+        
+        @media screen and (max-width: 450px) {
+            font-size: 1.5rem;
+        }
+        
+    }
+}

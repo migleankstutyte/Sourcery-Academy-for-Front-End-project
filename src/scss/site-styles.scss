@@ -33,6 +33,7 @@
 
 // Components
 @import 'components/helpers',
+'../components/wiki/wiki',
 '../components/header/header',
 '../components/header/header-navigation',
 '../components/header/header-actions',
@@ -72,14 +73,14 @@
 .flex {
     display: flex;
     justify-content: space-between;
+    box-sizing: border-box;
     margin: auto;
     max-width: 1180px;
+    padding: 0 20px;
     width: 100%;
 
     &__side-bar--fixed {
-
         $side-bar-border-color: $iron-light;
-
         box-shadow: 1px 0 0 $side-bar-border-color;
         height: 100%;
         position: fixed;
@@ -92,7 +93,7 @@
         width: 100%;
 
         &--company {
-            padding: 20px;
+            padding: 20px 0;
         }
     }
 }
@@ -112,5 +113,5 @@
 }
 
 .page-container {
-    margin-top: 56px; // that content would be seen below header, not on it
+    padding-top: 56px; // that content would be seen below header, not on it
 }
