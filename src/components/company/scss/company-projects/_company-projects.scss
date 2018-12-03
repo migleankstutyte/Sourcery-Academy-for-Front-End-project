@@ -183,6 +183,10 @@
             color: $est-text-color;
             min-width: 100px;
         }
+
+        &--hidden {
+            display: none;
+        }
     }
 }
 
