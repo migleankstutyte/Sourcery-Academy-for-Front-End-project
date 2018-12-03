@@ -34,6 +34,10 @@
 // Components
 @import 'components/helpers',
 '../components/header/header',
+'../components/header/header-navigation',
+'../components/header/header-actions',
+'../components/header/header-logo',
+'../components/header/profile-dropdown',
 '../components/bridge/bridge',
 '../components/bridge/bridge-action-bar/bridge-action-bar.scss',
 '../components/company/to-top-button/to-top-button',
@@ -52,7 +56,9 @@
 '../components/activity/activity-card-post/activity-card-header/activity-card-header',
 '../components/activity/activity-card-post/activity-card-content/activity-card-content',
 '../components/activity/activity-card-post/activity-card-comments/activity-card-comments',
+'../components/activity/activity-card-birthday/activity-card-birthday',
 '../components/activity/activity-card-upload/activity_card_upload',
+'../components/activity/activity-card-twitter/activity-card-twitter-content',
 '../components/activity/filter-bar/filter',
 '../components/footer/footer';
 

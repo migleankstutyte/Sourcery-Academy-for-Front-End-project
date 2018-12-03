@@ -1,14 +1,18 @@
 .columns-container {
-    display: flex;
+    /*display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: 100%;*/
 
     /*display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     grid-auto-rows: minmax(min-content, max-content);
     */
+
+    column-count: 3;
+    column-width: 380px;
+    column-gap: 20px;
 
     &__column {
         display: flex;
@@ -17,6 +21,16 @@
 
         &--middle {
             margin: 0 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .columns-container {
+        flex-direction: column;
+        
+        &__column--middle {
+            margin: 0;
         }
     }
 }

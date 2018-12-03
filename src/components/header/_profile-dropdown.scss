@@ -1,0 +1,40 @@
+.profile-dropdown {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 100%;
+
+    &--active {
+        display: block;
+    }
+
+    &__item {
+        align-items: center;
+        background-color: $navy;
+        display: flex;
+        flex-direction: row;
+        height: 45px;
+        justify-content: flex-start;
+        text-decoration: none;
+        width: 192px;
+
+        &:hover {
+            background-color: $outer-space;
+        }
+    }
+
+    &__text {
+        color: $white;
+    }
+
+    &__icon {
+        padding: 0 15px;
+    }
+
+    &__separator {
+        border-bottom: solid 1px $outer-space;
+    }
+}

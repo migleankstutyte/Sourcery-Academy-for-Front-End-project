@@ -185,3 +185,18 @@
         }
     }
 }
+@media (max-width: 400px) {
+    .modal__content {
+        width: 230px;
+    }
+
+    .modal__row {
+        width: 230px;
+
+        &-select,
+        &-input,
+        &-textarea {
+            width: 240px;
+        }
+    }
+}
