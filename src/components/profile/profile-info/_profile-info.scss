@@ -1,0 +1,237 @@
+//container for full width color
+.profile-color-wrapper {
+    $_color-background: $shark;
+    background-color: $_color-background;
+}
+
+.profile {
+    $_color-accent: $curious-blue;
+    $_color-text: $mischka;
+    $_color-heading: $oslo-gray;
+    $_color-separator: $outer-space;
+    $_color-item: $limed-spruce;
+    $_color-item-border: $river-bed;
+
+    color: $_color-text;
+    min-height: 321px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    // reset
+    * {
+        margin: 0;
+        font-weight: $weight-regular;
+    }
+
+    @mixin details-heading {
+        color: $_color-heading;
+        font-size: .75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+    }
+
+    .profile-content {
+        max-width: 1115px;
+        margin-top: 52px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    // Left and right sides width
+    &__item {
+        &-left {
+            width: 28%;
+        }
+
+        &-right {
+            width: 72%;
+        }
+    }
+
+    // LEFT SIDE
+    &-about {
+        margin: 0 18%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        word-break: break-all;
+    }
+
+    // top left section part with profile picture, name & occupation
+    .about__person {
+        &-name {
+            display: flex;
+            font-size: 1.25rem;
+            margin-top: 14px;
+            line-height: 1.2;
+        }
+
+        &-occupation {
+            color: $_color-accent;
+            font-size: .875rem;
+            text-transform: uppercase;
+            margin-bottom: 9px;
+            line-height: 2;
+        }
+    }
+
+    // bottom left section part with social icons
+    .about__social {
+        display: flex;
+        margin-bottom: 36px;
+
+        &-item {
+            background-color: $_color-item;
+            border-radius: 50%;
+            height: 24px;
+            width: 24px;
+            margin: 0 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                background-color: $_color-heading;
+                transition-property: background;
+                transition-duration: .3s;
+                transition-timing-function: ease;
+            }
+        }
+    }
+
+    // RIGHT SIDE
+    &-details {
+        padding-right: 7%;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    &-details__contacts {
+        display: flex;
+        flex-flow: row wrap;
+        border-bottom: 1px solid $_color-separator;
+        word-break: break-all;
+
+        .contacts__item {
+            margin-right: 38px;
+
+            &-title {
+                @include details-heading;
+                margin-bottom: 5px;
+                line-height: 1;
+            }
+
+            &-value {
+                font-size: 1.125rem;
+                line-height: 1.5;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    &-details__resume {
+        font-size: .9375rem;
+        line-height: 1.6;
+        border-bottom: 1px solid $_color-separator;
+        margin-top: 16px;
+        padding-bottom: 19px;
+        margin-bottom: 19px;
+
+        a {
+            color: $_color-accent;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &-details__skills {
+        .skills__title {
+            @include details-heading;
+            margin-top: 7px;
+            margin-bottom: 8px;
+            line-height: 1;
+        }
+
+        .skills__buttons {
+            display: flex;
+            flex-flow: row wrap;
+
+            &-item {
+                background-color: $_color-item;
+                border: 1px solid $_color-item-border;
+                color: $_color-text;
+                font-size: .8125rem;
+                border-radius: 2px;
+                min-height: 30px;
+                margin: 3px 5px 3px 0;
+                padding: 6px 10px;
+            }
+
+            &--hidden {
+                display: none;
+            }
+
+            &:hover .skills__buttons--hidden {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .profile-content {
+            margin-top: 15px;
+        }
+
+        .profile__item-left {
+            width: 100%;
+        }
+
+        .profile__item-right {
+            width: 100%;
+        }
+
+        .profile-about {
+            padding: 0;
+        }
+
+        .about__social {
+            margin-top: 4px;
+        }
+
+        .about__social-item {
+            height: 32px;
+            width: 32px;
+
+            &-icon {
+                transform: scale(1.2);
+            }
+        }
+
+        .profile-details {
+            padding: 0;
+        }
+
+        .profile-details__contacts {
+            flex-flow: column wrap;
+            align-items: center;
+            text-align: center;
+        }
+
+        .contacts__item {
+            margin-bottom: 20px;
+            margin-right: 0;
+
+        }
+
+        .contacts__item-title {
+            margin-bottom: 5px;
+        }
+    }
+}
