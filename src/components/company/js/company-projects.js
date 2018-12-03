@@ -1,7 +1,8 @@
-setTimeout(function() {
+
     // show side-bar content, when side-bar element is clicked
-    const content = document.getElementById("js-content");
+    // const content = document.getElementById("js-content"); Not necessary at all
     const projects = document.getElementById("js-project");
+    if(projects){
     projects.addEventListener("click", function() {
         content.innerHTML = `
         <div class="filter-bar">
@@ -296,4 +297,4 @@ setTimeout(function() {
 
         `;
     });
-}, 10);
+    }

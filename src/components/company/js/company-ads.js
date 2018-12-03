@@ -2,8 +2,9 @@
 const content = document.getElementById("js-content");
 const ads = document.getElementById("js-company-ads");
 
-ads.addEventListener("click", function() {
-    content.innerHTML = `
+if (ads) {
+    ads.addEventListener("click", function () {
+        content.innerHTML = `
         <div class="create-btn">
             <div class="create-btn__button">
                 <a href="#openModal" title="Create new ad" class="create-btn__button-text">Create New Ad</a>
@@ -109,12 +110,13 @@ ads.addEventListener("click", function() {
                 <div class="ads__row-date">04-17 14:30 AM</div>
             </div>
         </div>`;
-});
+    });
+}
 
-setTimeout(function() {
-    // show side-bar content, when side-bar element is clicked
-    const events = document.getElementById("js-events");
-    events.addEventListener("click", function() {
+// show side-bar content, when side-bar element is clicked
+const events = document.getElementById("js-events");
+if (events) {
+    events.addEventListener("click", function () {
         content.innerHTML = `
         <div class="filter-bar">
             <div class="filter-bar__left">
@@ -216,4 +218,4 @@ setTimeout(function() {
         </table>
         `;
     });
-}, 10);
+}

@@ -1,6 +1,5 @@
 // show side-bar elements
-const arr = [
-    {
+const arr = [{
         title: "Projects",
         id: 'id="js-project"',
         hasPicture: '',
@@ -50,37 +49,40 @@ const arr = [
     }
 ];
 
-// Show side bar in desktop menu
-function renderSideBarElements() {
-    let resultHtml = ""; // create empty variable
-    // loop through array
-    for (let i = 0; i < arr.length; i++) {
-        resultHtml += `
+if (btn) {
+
+    // Show side bar in desktop menu
+    function renderSideBarElements() {
+        let resultHtml = ""; // create empty variable
+        // loop through array
+        for (let i = 0; i < arr.length; i++) {
+            resultHtml += `
         <li role="menuitem" class="nav-list__item" ${arr[i].id}"> 
             <a href="#" class="nav-list__item-link">${arr[i].title}${arr[i].hasPicture}</a>
         </li>`;
+        }
+        document.querySelector(".nav-list").innerHTML = resultHtml; //show results
     }
-    document.querySelector(".nav-list").innerHTML = resultHtml; //show results
-}
 
-renderSideBarElements(); // call function
+    renderSideBarElements(); // call function
 
-// Show side bar in mobile menu
-function renderSideBarElementsMobile() {
-    let resultHtml = ""; // create empty variable
-    // loop through array
-    for (let i = 0; i < arr.length; i++) {
-        resultHtml += `
+    // Show side bar in mobile menu
+    function renderSideBarElementsMobile() {
+        let resultHtml = ""; // create empty variable
+        // loop through array
+        for (let i = 0; i < arr.length; i++) {
+            resultHtml += `
         <li role="menuitem" class="list__item" ${arr[i].id}"> 
             <a href="${arr[i].href}">${arr[i].title}${arr[i].hasPicture}
         </li>`;
+        }
+        document.querySelector(".list").innerHTML = resultHtml; //show results
     }
-    document.querySelector(".list").innerHTML = resultHtml; //show results
-}
 
-renderSideBarElementsMobile(); // call function
+    renderSideBarElementsMobile(); // call function
 
-// Toggle Company side bar
-function toggleSidebar(ref) {
-    document.body.classList.toggle("sidebar-active");
+    // Toggle Company side bar
+    function toggleSidebar(ref) {
+        document.body.classList.toggle("sidebar-active");
+    }
 }
