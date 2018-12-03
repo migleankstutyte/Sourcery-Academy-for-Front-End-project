@@ -51,6 +51,7 @@
 '../components/company/scss/company-ads/company-ads',
 '../components/company/scss/company-projects/company-projects',
 '../components/company/scss/company-ads/modal',
+'../components/wiki/wiki',
 '../components/activity/activity-card-post/activity-card-post',
 '../components/activity/activity-card-post/activity-card-header/activity-card-header',
 '../components/activity/activity-card-post/activity-card-content/activity-card-content',
@@ -59,7 +60,9 @@
 '../components/activity/activity-card-upload/activity_card_upload',
 '../components/activity/activity-card-twitter/activity-card-twitter-content',
 '../components/activity/filter-bar/filter',
-'../components/footer/footer';
+'../components/activity/filter-bar/filter',
+'../components/footer/footer',
+'../components/logout/logout';
 
 // Print stylesheet
 @import 'print';
