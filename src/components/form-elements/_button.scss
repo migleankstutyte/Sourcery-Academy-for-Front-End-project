@@ -11,13 +11,15 @@
     box-shadow: inset 1px 1px 0 $iron-light;
     cursor: pointer;
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
     &__icon {
         color: $scooter;
         font-size: 1.125rem;
         pointer-events: none;
-        position: relative;
-        top: 2px;
     }
 
     &__number {

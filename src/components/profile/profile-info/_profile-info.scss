@@ -12,6 +12,13 @@
     $_color-item: $limed-spruce;
     $_color-item-border: $river-bed;
 
+    color: $_color-text;
+    min-height: 321px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
     // reset
     * {
         margin: 0;
@@ -24,16 +31,6 @@
         text-transform: uppercase;
         letter-spacing: 0.6px;
     }
-
-    color: $_color-text;
-    max-width: 1180px;
-    margin: auto;
-    padding-top: 58px;
-    min-height: 316px;
-    padding-bottom: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
 
     .profile-content {
         max-width: 1115px;
