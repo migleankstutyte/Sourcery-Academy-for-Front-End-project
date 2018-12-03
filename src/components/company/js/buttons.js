@@ -1,7 +1,9 @@
 // remove Teams button, when "x" is pressed
 const btn = document.getElementById("fa-times");
+const green = document.getElementById("green");
 btn.onclick = function() {
     document.getElementById("teams").remove();
+    document.getElementById("green").remove();
 };
 
 // Show calendar
