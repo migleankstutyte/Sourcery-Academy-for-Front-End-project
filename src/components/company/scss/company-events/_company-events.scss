@@ -135,4 +135,28 @@
     }
     
 }
+@media (max-width: 380px) {
+    .events__headline-title, 
+    .events__row-title {
+        width: 60px;
+    }
+
+    .events__headline-date, 
+    .events__row-date {
+        max-width: 75px;
+    }
+
+    .events__headline-date {
+        text-align: center;
+    }
+
+    .events__row > td {
+        font-size: .625rem;
+    }
+
+    .events__headline > th {
+        font-size: .625rem;
+    }
+    
+}
 
