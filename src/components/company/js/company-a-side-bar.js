@@ -9,22 +9,26 @@ const arr = [
     {
         title: "Articles",
         id: 'id="js-articles"',
-        hasPicture: ''
+        hasPicture: '',
+        href: "/html/company/company-empty.html"
     },
     {
         title: "Dashboard",
         id: 'id="js-dashbord"',
-        hasPicture: '<img src="../images/company_icons/Arrow.png" alt="Arrow"/>'
+        hasPicture: '<img src="../images/company_icons/Arrow.png" alt="Arrow"/>',
+        href: "/html/company/company-empty.html"
     },
     {
         title: "Reports",
         id: 'id="js-reports"',
-        hasPicture: ''
+        hasPicture: '',
+        href: "/html/company/company-empty.html"
     },
     {
         title: "Tasks",
         id: 'id="js-tasks"',
-        hasPicture: ''
+        hasPicture: '',
+        href: "/html/company/company-empty.html"
     },
     {
         title: "Events",
@@ -41,12 +45,14 @@ const arr = [
     {
         title: "Client Account",
         id: 'id="js-client-account"',
-        hasPicture: ''
+        hasPicture: '',
+        href: "/html/company/company-empty.html"
     },
     {
         title: "Feedback/tickets",
         id: 'id="js-feedback"',
-        hasPicture: ''
+        hasPicture: '',
+        href: "/html/company/company-empty.html"
     }
 ];
 
