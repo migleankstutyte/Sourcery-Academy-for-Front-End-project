@@ -1,0 +1,30 @@
+.logo {
+    align-self: center;
+    display: flex;
+    flex-shrink: 0;
+    margin: 15px 0;
+
+    &__big {
+        display: block;
+    }
+
+    &__small {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .logo {
+
+        &__small {
+            display: block;
+            height: 30px;
+            width: 30px;
+        }
+
+        &__big {
+            display: none;
+        }
+    }
+}

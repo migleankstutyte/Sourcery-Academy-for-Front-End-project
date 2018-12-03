@@ -63,3 +63,15 @@
         max-width: 160px;
     }    
 }
+// Responsive layout
+@media (max-width: 420px) {
+    .ads__headline-title, 
+    .ads__row-title {
+        max-width: 90px;
+    }
+
+    .ads__headline-date, 
+    .ads__row-date {
+        min-width: 100px;
+    }
+}

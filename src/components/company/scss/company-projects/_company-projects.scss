@@ -183,6 +183,10 @@
             color: $est-text-color;
             min-width: 100px;
         }
+
+        &--hidden {
+            display: none;
+        }
     }
 }
 
@@ -246,6 +250,16 @@
 
         &-projects {
             max-width: 40%;
+        } 
+    }
+}
+@media (max-width: 360px) {
+
+    .projects__row {
+        &-projects {
+            .description {
+                font-size: .8125rem
+            }
         } 
     }
 }
