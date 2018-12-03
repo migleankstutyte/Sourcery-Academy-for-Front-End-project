@@ -249,3 +249,13 @@
         } 
     }
 }
+@media (max-width: 360px) {
+
+    .projects__row {
+        &-projects {
+            .description {
+                font-size: .8125rem
+            }
+        } 
+    }
+}

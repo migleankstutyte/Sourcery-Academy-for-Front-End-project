@@ -125,7 +125,7 @@
         width: 100%;
 
         .search {
-            width: 100%;
+            width: 99%;
         }
     }
 }
@@ -133,5 +133,12 @@
 @media (max-width: 775px) {
     .filter-bar__left {
         padding-top: 20px;
+    }
+}
+@media (max-width: 360px) {
+    .first-block {
+        .filter-bar-button--select {
+            margin-top: 10px;
+        }
     }
 }
