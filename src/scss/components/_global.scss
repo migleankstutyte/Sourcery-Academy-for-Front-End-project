@@ -6,17 +6,21 @@
 
 html,
 body {
+    background-color: $porcelain;
     height: 100%;
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: $porcelain;
+}
+
+html {
+    overflow-y: scroll;
 }
 
 body {
     font-family: $font-primary;
-    font-weight: $weight-regular;
     font-size: $base-font-size;
+    font-weight: $weight-regular;
     line-height: $base-line-height;
 
     // To prevent the iPhone and iPad from inflating fonts
