@@ -3,6 +3,7 @@
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
+if(document.getElementById("myBtn")){
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("myBtn").style.display = "block";
@@ -20,3 +21,4 @@ function topFunction() {
     }
     else clearTimeout(timeOut);
   };
+}

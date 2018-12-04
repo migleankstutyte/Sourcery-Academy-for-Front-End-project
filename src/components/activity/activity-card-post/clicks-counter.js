@@ -1,4 +1,5 @@
-setTimeout(() => {
+// button counting likes
+
     const socialButtonsArray = document.querySelectorAll(".js-clickme");
     if (socialButtonsArray) {
         socialButtonsArray.forEach(elem => {
@@ -11,9 +12,7 @@ setTimeout(() => {
             });
         });
     };    
-}, 10);
 
-setTimeout(() => {
     const likesDelete = document.querySelector(".js-likes-delete");
     if(likesDelete){
     likesDelete.addEventListener("click", () => {
@@ -24,15 +23,4 @@ setTimeout(() => {
             deleteNumber.innerHTML = count;
         }
     });
-};    
-}, 10);
-
-// Change button text color depends on what class do u use
-setTimeout(() => {
-    const buttonColorPicker = document.querySelectorAll(".social-button__icon");
-    const colorTarget = document.querySelector(".js-likes-number");
-    
-    if(buttonColorPicker.classList.contains("js-empty-heart")){
-        colorTarget.style.color= "#13191b";
-    }    
-}, 10);
+}  
