@@ -13,7 +13,7 @@
     $_color-item-border: $river-bed;
 
     color: $_color-text;
-    min-height: 321px;
+    min-height: 313px;
     padding-bottom: 20px;
     display: flex;
     justify-content: center;
@@ -32,9 +32,15 @@
         letter-spacing: 0.6px;
     }
 
+    @mixin buttons-transition {
+        transition-property: background;
+        transition-duration: .3s;
+        transition-timing-function: ease;
+    }
+
     .profile-content {
         max-width: 1115px;
-        margin-top: 52px;
+        margin: 46px auto 0;
         display: flex;
         flex-wrap: wrap;
     }
@@ -94,10 +100,13 @@
             justify-content: center;
 
             &:hover {
+                @include buttons-transition;
                 background-color: $_color-heading;
-                transition-property: background;
-                transition-duration: .3s;
-                transition-timing-function: ease;
+            }
+
+            &:active {
+                @include buttons-transition;
+                background-color: $_color-item-border;
             }
         }
     }
@@ -151,6 +160,10 @@
     }
 
     &-details__skills {
+        &:hover {
+            cursor: pointer;
+        }
+
         .skills__title {
             @include details-heading;
             margin-top: 7px;
@@ -171,20 +184,26 @@
                 min-height: 30px;
                 margin: 3px 5px 3px 0;
                 padding: 6px 10px;
+                outline: none;
+                cursor: pointer;
             }
 
             &--hidden {
                 display: none;
             }
+        }
 
-            &:hover .skills__buttons--hidden {
-                display: flex;
-                flex-wrap: wrap;
-            }
+        &:hover .skills__buttons--hidden {
+            display: flex;
+            flex-wrap: wrap;
         }
     }
 
     @media only screen and (max-width: 600px) {
+        .profile {
+      //      height: 100%;
+        }
+
         .profile-content {
             margin-top: 15px;
         }
@@ -214,6 +233,10 @@
             }
         }
 
+        .profile-about {
+            margin: auto 0;
+        }
+
         .profile-details {
             padding: 0;
         }
@@ -222,6 +245,10 @@
             flex-flow: column wrap;
             align-items: center;
             text-align: center;
+        }
+
+        .profile-details__skills:hover {
+            cursor: auto;
         }
 
         .contacts__item {
