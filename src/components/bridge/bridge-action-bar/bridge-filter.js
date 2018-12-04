@@ -57,4 +57,4 @@ if (allButton) {
             this.className += " bridge-filter__list-item--active";
         });
     });
-};
+}
