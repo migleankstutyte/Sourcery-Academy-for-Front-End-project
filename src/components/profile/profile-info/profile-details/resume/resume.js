@@ -1,5 +1,6 @@
 // expands text when user clicks 'See More'. Collapse it with 'See Less'
 function toggleResume(resume) {
+    event.preventDefault();
     const reson = resume + "On";
     const resoff = resume + "Off";
     if (document.getElementById("resumeToggleSwitch")) {
