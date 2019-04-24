@@ -1,5 +1,12 @@
 # README #
 
+### `git clone https://github.com/migleankstutyte/Sourcery-Academy-for-Front-End-project.git`
+### `npm install gulp`
+### `npm start`
+### `http://localhost:8000/html/`
+
+
+
 This README would normally document whatever steps are necessary to get your application up and running.
 
 ### What is this repository for? ###
@@ -27,6 +34,3 @@ This README would normally document whatever steps are necessary to get your app
 
 * Repo owner or admin
 * Other community or team contact
-
-corrections done
-twice
